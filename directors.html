@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Members Section</title>
+    <link rel="shortcut icon" type="image/jpeg" href="image/favicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&family=Cairo:wght@700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body style="font-family: 'Proza Libre', sans-serif;">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        //<!--hide
+        var password;
+        var pass1="directors";
+        password=prompt('Enter Password to View Page');
+        if (password==pass1)
+        alert('Correct Password, click OK to enter');
+        else
+        {
+          alert('Incorrect Password, redirected to Homepage')
+          window.location="https://admiring-kepler-b5e951.netlify.app/";
+        }
+        //-->
+    </script>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="text-align: center;">
+          <h1>DIRECTORS SECTION</h1>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h2>Directors Database</h2>
+        <p>Type in the input field to find the active cities, city's chief head's name, running projects and their contact details: </p>  
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr style="text-align: center;">
+              <th>City Name</th>
+              <th>Office Head</th>
+              <th style="vertical-align: middle;">Projects</th>
+              <th>Contact Details</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Delhi</td>
+              <td>John</td>
+              <td><ul>
+                  <li>lim</li>
+                  <li>obc</li>
+                  <li>xyz</li>
+                </ul></td>
+              <td><ul>
+                  <li>9810091111</li>
+                  <li>abc@gmail.com</li>
+              </ul></td>
+            </tr>
+            <tr>
+                <td>Patna</td>
+                <td>Doe</td>
+                <td><ul>
+                    <li>para</li>
+                    <li>pala</li>
+                    <li>lumos</li>
+                  </ul></td>
+                <td><ul>
+                    <li>9810091122</li>
+                    <li>def@gmail.com</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Ranchi</td>
+                <td>Harris</td>
+                <td><ul>
+                    <li>pera</li>
+                    <li>xuru</li>
+                    <li>zebra</li>
+                  </ul></td>
+                <td><ul>
+                    <li>9810091133</li>
+                    <li>xyz@gmail.com</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Bombay</td>
+                <td>Harry</td>
+                <td><ul>
+                    <li>lela</li>
+                    <li>mema</li>
+                    <li>neto</li>
+                  </ul></td>
+                <td><ul>
+                    <li>9810091144</li>
+                    <li>tfg@gmail.com</li>
+                </ul></td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>        
+  </div>
+    <br>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-bottom" style="box-shadow: 5px 0px 9px #888888;background-color: #E9ECEF;">
+        <ul class="navbar-nav">
+            <li class="nav-item" style="margin-right: 8px;">
+                <a class="nav-link link-effect" href="trustees.html" style="color: black;font-size: 17px;">TRUSTEES SECTION</a>
+            </li>
+            <li class="nav-item" style="margin-right: 8px;">
+                <a class="nav-link link-effect" href="members.html" style="color: black;font-size: 17px;">MEMBERS SECTION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-effect" href="index.html" style="color: black;font-size: 17px;">HOME PAGE</a>
+            </li>
+        </ul>
+    </nav>
+
+  </body>
+</html>
