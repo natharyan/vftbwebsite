@@ -17,7 +17,7 @@
 
   </head>
   <body style="font-family: 'Proza Libre', sans-serif;">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
@@ -31,7 +31,7 @@
         else
         {
           alert('Incorrect Password, redirected to Homepage')
-          window.location="https://admiring-kepler-b5e951.netlify.app/";
+          window.location="https://vftb.netlify.app/";
         }
         //-->
     </script>
@@ -62,15 +62,12 @@
       <h2>Directives by the City Councils:</h2>
       <br>
       <div class="alert alert-primary alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Info!</strong> Bombay started project relief
       </div>
       <div class="alert alert-primary alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Info!</strong> Delhi reqruited 2 new volunteers
       </div>
       <div class="alert alert-primary alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Info!</strong> Ranchi started the relief initiative
       </div>
     </div>
@@ -85,7 +82,7 @@
             <tr style="text-align: center;">
               <th>City Name</th>
               <th>Office Head</th>
-              <th style="vertical-align: middle;">Projects</th>
+              <th style="vertical-align: middle;">Upcoming Projects</th>
               <th>Contact Details</th>
             </tr>
           </thead>
@@ -94,9 +91,10 @@
               <td>Delhi</td>
               <td>John</td>
               <td><ul>
-                  <li>lim</li>
-                  <li>obc</li>
-                  <li>xyz</li>
+                  <li>Project Sahara</li>
+                  <ul>
+                    <li><p class="text-muted">Description: to help the blind participate in sports tournaments</p></li>
+                  </ul>
                 </ul></td>
               <td><ul>
                   <li>9810091111</li>
@@ -203,14 +201,20 @@
   <nav class="navbar navbar-expand-sm navbar-light sticky-bottom" style="box-shadow: 5px 0px 9px #888888;background-color: #E9ECEF;">
     <ul class="navbar-nav">
       <li class="nav-item" style="margin-right: 8px;">
-        <a class="nav-link link-effect" href="directors.html" style="color: black;font-size: 17px;">DIRECTORS SECTION</a>
+        <a class="nav-link link-effect" href="directors.html" style="color: black;font-size: 15px;">DIRECTORS SECTION</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-effect" href="index.html" style="color: black;font-size: 17px;">HOME PAGE</a>
+        <a class="nav-link link-effect" href="index.html" style="color: black;font-size: 15px;">HOME PAGE</a>
       </li>
     </ul>
   </nav>
 
+  <div class="loading"></div>
+  <script>
+    $(window).on("load",function(){
+      $(".loading").fadeOut("slow")
+    });
+  </script>
 
   </body>
 </html>
