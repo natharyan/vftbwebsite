@@ -236,7 +236,7 @@ display: none;
   height: fit-content;
   margin: 50px auto;
   align-content: center;
-  background-color: #d7d2cc;
+  background-color: white;
   /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('https://scontent.fdel1-4.fna.fbcdn.net/v/t1.18169-9/554640_1393968614178835_1419439269_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-BlAAFmk1mAAX-6uUFR&_nc_ht=scontent.fdel1-4.fna&oh=5e0b4056c96ffca5c2de7f642fa563a8&oe=60A22338');*/
   /*background:rgb(42, 71, 71);*/
   background-size: cover;
@@ -249,6 +249,7 @@ display: none;
   box-shadow: 5px 5px 5px black;
   font-family: 'Proza Libre', sans-serif;
   padding: 70px 5px;
+  border: 8px solid rgb(1, 57, 121);
 }
 .item .content{
   bottom: 0;
