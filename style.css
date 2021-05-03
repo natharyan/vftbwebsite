@@ -34,8 +34,7 @@
 
 
   .anim {
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      -webkit-text-stroke: 1px rgb(197, 197, 197);
+      -webkit-text-stroke: 1px rgb(0, 0, 0);
       text-align: center;
       color: #FFF;
       display: flex;
@@ -49,11 +48,11 @@
       /*
       background-image: url('https://media.giphy.com/media/2H9r8AKyYyecz9yyRq/source.gif') ;      
       background-image: url('https://source.unsplash.com/aYkDMrRo580/2000x2000') ;
-      */
       background-image: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/source.gif') ;
-
-      background-position: 80% 10%;
-      background-color: white;
+      background-image: url('https://media.giphy.com/media/ldqBKkhRElMsS7JybI/source.gif') ;
+      */
+      background: linear-gradient(#45b6b0,#528BC8);
+      background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
       color: transparent;
@@ -61,7 +60,7 @@
       -webkit-background-clip: text;
       text-transform: uppercase;
       font-size: 6.5vw;
-      line-height: .75;
+      line-height: .87;
       margin: 10px 0;
       padding:5px;
   }
@@ -167,7 +166,7 @@ div.image  img {
   font-size: 17px;
   margin-right: 10%;
 }
-/*
+
 .link-effect1{
   position: relative; 
   }
@@ -189,7 +188,7 @@ div.image  img {
   visibility: visible;
   transform: scaleX(1);
 }
-*/
+
 .link-effect::after{
   content:'';
   display: block;
@@ -556,8 +555,8 @@ z-index: -1;
 
 .loading {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height:100%;
+  position: fixed;
   top: 0;
   left: 0;
   background: #29586b;
