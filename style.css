@@ -4,9 +4,13 @@
   height: 100vh;
   width: 100%;
 }
-  &:nth-last-child(1) {
+/*IMPORTANT. MAKES SROLLING SMOOTH*/
+html {
+  scroll-behavior: smooth;
+}
+&:nth-last-child(1) {
     height: 100vh;
-  }
+}
 
 *, *:before, *:after {
   box-sizing: border-box;
