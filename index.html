@@ -32,7 +32,7 @@
     <div class="bg bg3"></div>
     
     
-      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;padding: 30px;background:linear-gradient(180deg,#2a6680,#367e9c,#4eb2dd)">
+      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;padding: 30px;background:linear-gradient(180deg,#29627a,#367e9c,#3c90c0)">
         
         <div class="container" style="text-align: center;">
           <!--
@@ -73,7 +73,7 @@
         <div class="dropdown-menu" style="font-family: 'Proza Libre', sans-serif;">
           <a class="dropdown-item" href="#about">About Us</a>
           <a class="dropdown-item" href="about.html#ideology">General Principles</a>
-          <a class="dropdown-item" href="about.html#team">The Team</a>
+          <a class="dropdown-item" href="about.html#team">Leadership</a>
         </div>
       </li>
       <li class="nav-item" style="font-family: 'Proza Libre', sans-serif;margin-right: 25px;">
@@ -365,8 +365,29 @@
                 </p>
               </div>
           </div>
-        
+          
           <br>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          
           <br>
               
               <div class="container mt-3" style="font-family: 'Proza Libre', sans-serif;">
