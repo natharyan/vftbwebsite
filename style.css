@@ -11,9 +11,11 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+/*
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
+*/
 .stacking-slide {
   padding: 3rem;
   }
