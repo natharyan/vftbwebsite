@@ -112,36 +112,6 @@ html {
   text-transform: uppercase;
   width: 100vmin;
 }
-div.image {
-  background: white;
-  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
-  border: 15px solid white;
-  border-width: 1vmin 1vmin 1vmin 1vmin;
-  overflow: hidden;
-  width: 70vmin;
-  position: relative;
-}
-div.image  img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  }
-
-  
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transition: .5s ease;
-}
-
-/*div.image:hover .overlay {    height: 90%;}*/
-
 
 .text1 {
   color: white;
@@ -308,19 +278,35 @@ display: none;
 div.image {
   background: white;
   box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.25);
-  border: 15px solid white;
-  border-width: 1vmin 1vmin 1vmin 1vmin;
   overflow: hidden;
   width: 100%;
   height: 100%;
   position: relative;
+  border-radius: 18%;
 }
 div.image  img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+    transition: transform 2s;
   }
-
+div.image:hover img{
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  font-family: 'Proza Libre', sans-serif;
+}
+  
+  /*div.image:hover .overlay {    height: 90%;}*/
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -347,7 +333,7 @@ div.image  img {
 
 .btn{
   background-color:white;
-  border: 1.5px solid black;
+  border: 1.8px solid black;
 }
 .btn a{
   color: black;
