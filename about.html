@@ -13,6 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+
 
     
 </head>
@@ -182,16 +184,24 @@ html {
   visibility: visible;
   transform: scaleX(1);
 }
+.link-effect2{
+  color: #888888;
+  transition: all 0.3s ease-in-out;
+}
+.link-effect2:hover{
+  color:black
+}
 </style>
 </head>
 <body>
 
-    <div class="jumbotron jumbotron-fluid wrapper2" style="background-color:whitesmoke;color:black" id="ideology">
+    <div class="jumbotron jumbotron-fluid wrapper2" style="background-color:whitesmoke;color:black" id="principles">
         <div class="container" style="text-align: center;">
           <h1 style="font-family: 'Proza Libre', sans-serif;color: white;">About Us</h1>
         </div>
     </div>
-  <div class="container">
+  <div class="container" style="box-shadow: 2px 2px 2px 2px #888;">
+    <br>
   <p>
     OUR GUIDING PRINCIPLES: <br><br>
 
@@ -217,11 +227,26 @@ html {
     All Donors, Volunteers and NGOs are accepted, except those with conditional offers subject to biases in age, gender, religion, race, caste or political influence. We respond to all requests, and suitable records are maintained.
     Quick and rapid response and provision of professional services are undertaken. Volunteer teams are held in readiness. Volunteers are well trained, motivated, provided suitable incentives and screened to check biases. We encourage professionalism and quality services.
     Priorities of VH individuals or NGOs are priorities for us. We stay updated and informed of all activities in the Disability sector. We get involved and are active with the leading organisations in the sector. <br>
-    </div>
   </p>
+  </div>
+  <br><br>
+  <div class="container" id="vision" style="box-shadow: 2px 2px 2px 2px #888;">
+    <br>
+    <p>
+    <span style="text-decoration: underline;">Vision </span><br><br>
+
+    Improve the quality of life for the Visually Challenged.<br><br>
+ 
+    <span style="text-decoration: underline;">Mission</span><br><br>
+
+    Assist Blind persons & organizations supporting them, to promote an understanding of their needs & to enable the availability of better quality of services nationally & internationally.
+
+    </p>
+  </div>
+<!--try and use visibility css instead of popover-->
 <div class="container-fluid" style="padding: 10px;font-family: 'Proza Libre', sans-serif;" id="team">
   <br>
-  <h2 style="text-align:center;font-family: 'Proza Libre', sans-serif;">THE TRUSTEES</h3>
+  <h2 style="text-align:center;font-family: 'Proza Libre', sans-serif;text-decoration: underline;">THE TRUSTEES</h3>
   <br>
   <br>
   <div class="container">
@@ -355,13 +380,8 @@ html {
 <br>
 <br>
 <br>
-    <nav class="navbar navbar-expand-sm navbar-light fixed-bottom justify-content-center" style="box-shadow: 5px 0px 9px #888888;background-color: whitesmoke;z-index: 10;">
-      <ul class="navbar-nav">
-        <li class="nav-item" style="margin-right: 9px;">
-          <a class="nav-link link-effect1" href="index.html" style="color: black;font-size: 16px;">HOME PAGE</a>
-        </li>
-      </ul>
-    </nav>
+       
+    <a class="nav-link link-effect2" href="index.html" style="background-color: white;border-radius: 15px;box-shadow: 0px 0px 5px #888;font-size: 16px;position: fixed;left: 10px;bottom: 15px;"><i class="fas fa-home" style="margin-right: 5px;"></i>Home</a>
 
         <div class="loading" delay-hide="50000"></div>
         <script>

@@ -142,7 +142,23 @@ html {
   font-size: 17px;
   margin-right: 10%;
 }
+/*left to right*/
+.link-effect::after{
+  content:'';
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: 0px;
+  background:black;
+  transition: width 1s;
+}
 
+.link-effect:hover::after{
+  width: 100%;
+  transition: width .5s;
+}
+
+/*center to sides*/
 .link-effect1{
   position: relative; 
   }
@@ -165,20 +181,15 @@ html {
   transform: scaleX(1);
 }
 
-.link-effect::after{
-  content:'';
-  display: block;
-  width: 0;
-  height: 2px;
-  margin: 0px;
-  background:black;
-  transition: width .43s;
+/*black on hover*/
+.link-effect2{
+  color: #888888;
+  transition: all 0.3s ease-in-out;
+}
+.link-effect2:hover{
+  color:black
 }
 
-.link-effect:hover::after{
-  width: 100%;
-  transition: width .43s;
-}
 
 .topnav .icon {
 display: none;
@@ -517,7 +528,7 @@ z-index: -1;
 }
 
 .wrapper2 {
-  background: linear-gradient(60deg,#373B44,#464f64,#506a7a,#73C8A9);
+  background: linear-gradient(60deg,#373B44,#464f64,#506a7a,#437261);
   background-size: 600% 100%;
   animation: gradient 8s linear infinite;
   animation-direction: alternate;
