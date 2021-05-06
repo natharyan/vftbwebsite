@@ -33,7 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+
     <script>
         //<!--hide
         var password;
@@ -63,13 +63,13 @@
     <div class="container">
       <h2>Directives by the Board of Directors:</h2>
       <br>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Bombay started project relief
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Delhi reqruited 2 new volunteers
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Ranchi started the relief initiative
       </div>
     </div>
@@ -78,13 +78,13 @@
     <div class="container">
       <h2>Directives by the Board of Trustees:</h2>
       <br>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Bombay started project relief
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary  alert-dismissible text-white">
         <strong>Info!</strong> Delhi reqruited 2 new volunteers
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Ranchi started the relief initiative
       </div>
     </div>
@@ -93,61 +93,209 @@
     <div class="container">
       <h2>Directives by the Forum:</h2>
       <br>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary  alert-dismissible text-white">
         <strong>Info!</strong> Bombay started project relief
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Delhi reqruited 2 new volunteers
       </div>
-      <div class="alert alert-primary alert-dismissible">
+      <div class="alert bg-primary alert-dismissible text-white">
         <strong>Info!</strong> Ranchi started the relief initiative
       </div>
     </div>
     <br>
     <br>
 
-  <div class="container">
-    <h3 style="text-align:center;font-family: 'Proza Libre', sans-serif;">List of Directors</h3>
-    <br>
-    <ul class="w3-ul w3-card-4">
-      <li class="w3-bar">
-        <img src="https://source.unsplash.com/random/1" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-        <div class="w3-bar-item">
-          <span class="w3-large">Mike</span><br>
-          <span>Web Designer</span>
-        </div>
-      </li>
-  
-      <li class="w3-bar">
-        <img src="https://source.unsplash.com/random/2" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-        <div class="w3-bar-item">
-          <span class="w3-large">Jill</span><br>
-          <span>Support</span>
-        </div>
-      </li>
-  
-      <li class="w3-bar">
-        <img src="https://source.unsplash.com/random/3" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-        <div class="w3-bar-item">
-          <span class="w3-large">Jane</span><br>
-          <span>Accountant</span>
-        </div>
-      </li>
-      <li class="w3-bar">
-        <img src="https://source.unsplash.com/random/4" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-        <div class="w3-bar-item">
-          <span class="w3-large">Jill</span><br>
-          <span>Support</span>
-        </div>
-      </li>
-      <li class="w3-bar">
-        <img src="https://source.unsplash.com/random/5" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-        <div class="w3-bar-item">
-          <span class="w3-large">Jill</span><br>
-          <span>Support</span>
-        </div>
-      </li>
-    </ul>
+    <div class="container-fluid mt-3">
+      <h2 style="font-family: 'Proza Libre', sans-serif;">Directors Database</h2>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <table class="table table-hover table-responsive">
+        <caption>Scroll right if content not visible</caption>
+        <thead>
+          <tr style="text-align: center;">
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Ranks Held</th>
+            <th>Member Sub(Paid/Not)</th>
+            <th>Status</th>
+            <th>Projects</th>
+            <th>Office Bearer Appointments Held</th>
+            <th>Special Skills/Profession/Background</th>
+            <th>Years Present</th>
+            <th>Other Associated Organisations & Designation</th>
+            <th>Contact Details</th>
+          </tr>
+        </thead>
+        <tbody id="myTable" style="font-size: 14px;">
+          <tr class="text-muted bg-white"><td colspan="11">
+            New Delhi</td></tr>
+          <tr>
+            <td>1</td>
+            <td>Jyoti Chopra</td>
+            <td>Volunteer 2004; F Member (N Delhi)2004; Dir 2007</td>
+            <td></td>
+            <td>Passive</td>
+            <td><ul>
+              <li>Previously Handled Projects:
+                <ul><li>Relations with vols;</li></ul>
+              </li>
+            </ul></td>
+            <td>Member, Bd of Dirs 2007; Volunteer Relations 2011</td>
+            <td>Travel Industry</td>
+            <td>2004-present</td>
+            <td>Sadhna Travels</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9810408150 
+                </li>
+                <li>
+                  Email: <br>prjain52000@yahoo.co.in
+                </li>
+                <li>
+                  Address: <br>114, Kadambari apts, Sec 9, Rohini, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Janice Masih</td>
+            <td>Volunteer 2005; F Member (N Delhi)2007; F Member (Blore)2008; Member (N) 2014,; Donor 2018</td>
+            <td></td>
+            <td>Passive</td>
+            <td><ul>
+              <li>Current Projects:
+                <ul><li>Face Book  2016</li></ul>
+              </li>
+              <li>Previosuly Handled Projects:
+                <ul>
+                <li>Procurement of wrist bands</li>
+                <li>Partnership with Chetanalaya</li>
+              </ul>
+            </li>
+            </ul></td>
+            <td>Member, Bd of Dirs 2014</td>
+            <td>CSR specialisation</td>
+            <td>2005-present</td>
+            <td>Embassy of Japan</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9999030892 
+                </li>
+                <li>
+                  Email: <br>masihjanice@gmail.com
+                </li>
+                <li>
+                  Address: <br>Peetampura, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Vijay Matange</td>
+            <td>Volunteer 2010; Mentor 2016; Donor 2016; Member 2017; Member (N) 2021</td>
+            <td>Paid</td>
+            <td>Passive</td>
+            <td><ul>
+              <li>Previosuly Handled Projects:
+                <ul>
+                <li>Guidelines for public spaces for the VH</li>
+              </ul>
+            </li>
+            </ul></td>
+            <td>Member, GC (NCR) 2017; Vice Chair GC (NCR) 2021</td>
+            <td>Teaching architecture</td>
+            <td>2010-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9810626130
+                </li>
+                <li>
+                  Email: <br>vijaymatange@yahoo.com
+                </li>
+                <li>
+                  Address: <br>Preet Vihar, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Col GS Grover</td>
+            <td>Volunteer 2010; Mentor 2016; Member 2017; Donor 2018; Member (N) 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td>Chair, Gov Council; 2017</td>
+            <td>Mil Veteran</td>
+            <td>2010-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9811212474
+                </li>
+                <li>
+                  Email:
+                  <ul>
+                    <li>gurmeetg44@yahoo.co.in</li>
+                    <li>gurmeet4439@gmail.com</li>
+                  </ul>
+                </li>
+                <li>
+                  Address: <br>Safdurjung Development rea, Hauz Khas, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white"><td colspan="11">
+            Noida</td></tr>
+            <tr>
+              <td>1</td>
+              <td>Indu Ramchandani</td>
+              <td>Volunteer 2008; F Member 2010; Memb (N) 2021</td>
+              <td></td>
+              <td>Active</td>
+              <td><ul>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>Support for VH Women</li>
+                  </ul>
+                </li>
+              </ul></td>
+              <td>Chair, the Forum 2021</td>
+              <td>Publisher; Actress</td>
+              <td>2008-present</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>
+                    Phone Number: <br>9999827200
+                  </li>
+                  <li>
+                    Email: <br>indu.ramchandani@gmail.com
+                  </li>
+                </ul>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+      <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+      </script>        
   </div>
   <br>
   <br>

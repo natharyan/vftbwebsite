@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&family=Cairo:wght@700&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
 
@@ -34,7 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <!--
     <script>
         //<!--hide
         var password;
@@ -57,49 +56,270 @@
 
     <br>
     <br>
-    <div class="container">
-      <h3 style="text-align:center;font-family: 'Proza Libre', sans-serif;">List of Trustees</h3>
+    <div class="container-fluid mt-3">
+      <h2 style="font-family: 'Proza Libre', sans-serif;">Trustees Database</h2>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
       <br>
-      <ul class="w3-ul w3-card-4">
-        <li class="w3-bar">
-          <img src="https://source.unsplash.com/random/1" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-          <div class="w3-bar-item">
-            <span class="w3-large">Mike</span><br>
-            <span>Web Designer</span>
-          </div>
-        </li>
-    
-        <li class="w3-bar">
-          <img src="https://source.unsplash.com/random/2" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-          <div class="w3-bar-item">
-            <span class="w3-large">Jill</span><br>
-            <span>Support</span>
-          </div>
-        </li>
-    
-        <li class="w3-bar">
-          <img src="https://source.unsplash.com/random/3" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-          <div class="w3-bar-item">
-            <span class="w3-large">Jane</span><br>
-            <span>Accountant</span>
-          </div>
-        </li>
-        <li class="w3-bar">
-          <img src="https://source.unsplash.com/random/4" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-          <div class="w3-bar-item">
-            <span class="w3-large">Jill</span><br>
-            <span>Support</span>
-          </div>
-        </li>
-        <li class="w3-bar">
-          <img src="https://source.unsplash.com/random/5" class="w3-bar-item w3-circle w3-hide-small" style="width:90px;">
-          <div class="w3-bar-item">
-            <span class="w3-large">Jill</span><br>
-            <span>Support</span>
-          </div>
-        </li>
-      </ul>
-    </div>
+      <table class="table table-hover table-responsive">
+        <caption>Scroll right if content not visible</caption>
+        <thead>
+          <tr style="text-align: center;">
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Ranks Held</th>
+            <th>Member Sub(Paid/Not)</th>
+            <th>Status</th>
+            <th>Projects</th>
+            <th>Office Bearer Appointments Held</th>
+            <th>Special Skills/Profession/Background</th>
+            <th>Years Present</th>
+            <th>Other Associated Organisations & Designation</th>
+            <th>Contact Details</th>
+          </tr>
+        </thead>
+        <tbody id="myTable" style="font-size: 14px;">
+          <tr class="text-muted bg-white"><td colspan="11">
+            New Delhi</td></tr>
+          <tr>
+            <td>1</td>
+            <td>Pranav Lal (VH)</td>
+            <td>Trustee 2000; F Member  2000</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td>Member, Bd of Dirs 2000; Dir (Tech & Comm) 2011; Chair Bd of Trustees Dec 2019 </td>
+            <td>Cyber tech. TEDx Speaker</td>
+            <td>2000-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number:
+                  <ul>
+                    <li>98119 19152</li>
+                    <li>9818002637</li>
+                  </ul>
+                </li>
+                <li>
+                  Email: <br>pranav.lal@gmail.com
+                </li>
+                <li>
+                  Address: <br>43, GK 2, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Manjari Lopez</td>
+            <td>Volunteer 2005; Member(N Delhi) 2007; Dir 2007; Trustee 2010, </td>
+            <td>Paid</td>
+            <td>Active</td>
+            <td><ul>
+              <li>Current Projects:
+                <ul><li>Relations with vols</li>
+                <li>Fund Raising</li>
+              </ul>
+              </li>
+              <li>Previosuly Handled Projects:
+                <ul>
+                <li>Support for individual VH persons</li>
+                <li>Fund Raising</li>
+                <li>Massed deployment of volunteers</li>
+                <li>Building general awareness of Armed Forces</li>
+              </ul>
+            </li>
+            </ul></td>
+            <td>Dir (Internal Affairs) 2010- 14; Chair Bd of Trustees 2014-19 ViceChair Bd Trustees 2021- dt</td>
+            <td>Educationist with 55 yrs experience; Principal of several schools.</td>
+            <td>2005-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9599647323
+                </li>
+                <li>
+                  Address: <br>C, Vasant Kunj, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Inderjit Lal (PH)</td>
+            <td>Volunteer 2007; Member (N Delhi) 2011; Trustee 2018, </td>
+            <td></td>
+            <td>Active</td>
+            <td><ul>
+              <li>Current Projects:
+                <ul>
+                  <li>Partnership with YMCA</li>
+                </ul>
+              </li>
+              <li>Previosuly Handled Projects:
+                <ul>
+                <li>Collaboration with YMCA across multiple cities 2010 - dt</li>
+              </ul>
+            </li>
+            </ul></td>
+            <td>Member, Bd of Dirs 2013; Chair, Bd of Trustees 2014; Exec Dir (Internal Affairs) 2018</td>
+            <td>Travel & Tourism adminstrator; Has travelled globally extensively</td>
+            <td>2007-present</td>
+            <td>YMCA</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9313504014
+                </li>
+                <li>
+                  Email: <br>inderjit_lal@hotmail.com;
+                </li>
+                <li>
+                  Address: <br>B, Defence Colony, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>BL Bhardwaj</td>
+            <td>F Trustee, F Member (N Delhi) 2000</td>
+            <td></td>
+            <td>Dormant</td>
+            <td><ul>
+              <li>Previosuly Handled Projects:
+                <ul>
+                <li>Camp Abilities USA 2002</li>
+                <li>Blind sportsJt Dir (Sports)2002 - 09</li>
+              </ul>
+            </li>
+            </ul></td>
+            <td>Member, Bd of Dirs 2000 to date</td>
+            <td>Blind sports coach & administrator</td>
+            <td>2000-present</td>
+            <td>BRA</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9873326795
+                </li>
+              </ul>
+            </td>
+          </tr>
+            <tr>
+              <td>5</td>
+              <td>Col Pradeep Kapoor</td>
+              <td>F Trustee 2000; F Member (N Delhi) 2000; Donor 2000</td>
+              <td>Paid</td>
+              <td>Active</td>
+              <td><ul>
+                <li>Current Projects:
+                  <ul>
+                    <li>Development of legal documents, Policies, Rules & protocols 2020</li>
+                    <li>All operations 2000</li>
+                  </ul>
+                </li>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>All National & city based projects 2000 to dt</li>
+                  </ul>
+                </li>
+              </ul></td>
+              <td>Gen Secy 2000- 17; Exec Dir (ops) 2018- dt</td>
+              <td>Military Veteran; Disability professional</td>
+              <td>2000-present</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>
+                    Phone Number: <br>9313504014
+                  </li>
+                  <li>
+                    Email: <br>pradeepkapoor175@gmail.com
+                  </li>
+                  <li>
+                    Address: <br>D 381, Defence Colony, New Delhi
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Rakesh Sahni</td>
+              <td>Volunteer 2009; Member (N Delhi)2021; Donor 2009; Donor 2017- 20; Trustee 2021</td>
+              <td></td>
+              <td>Passive</td>
+              <td></td>
+              <td></td>
+              <td>Architect</td>
+              <td>2008-present</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>
+                    Phone Number: <br>9810044415
+                  </li>
+                  <li>
+                    Email: <br>rakeshkumarsahni@gmail.com
+                  </li>
+                  <li>
+                    Address: <br>B, Defence Colony, N Delhi
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="text-muted bg-white"><td colspan="11">
+              Noida</td></tr>
+            <tr>
+              <td>1</td>
+              <td>Wg Cdr D Bhardwaj </td>
+              <td>Volunteer 2006; Donor 2007; Donor 2018- 20; F Member (Noida) 2021 Trustee 2021</td>
+              <td></td>
+              <td>Active</td>
+              <td><ul>
+                <li>Current Projects:
+                  <ul>
+                    <li>Support for Disabled veterans</li>
+                  </ul>
+                </li>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>Support for Disabled veterans 2015 </li>
+                  </ul>
+                </li>
+              </ul></td>
+              <td>Memb GC 2010; Chair, GC</td>
+              <td>Military Veteran; Disability professional</td>
+              <td>2000-present</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>
+                    Phone Number: <br>9313504014
+                  </li>
+                  <li>
+                    Email: <br>pradeepkapoor175@gmail.com
+                  </li>
+                  <li>
+                    Address: <br>D 381, Defence Colony, New Delhi
+                  </li>
+                </ul>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+      <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+      </script>        
+  </div>
     <br>
     <br>
     <div class="container mt-3">
