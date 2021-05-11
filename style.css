@@ -304,6 +304,14 @@ div.image {
 div.image:hover img{
   transform: scale(1.1);
 }
+.block{
+  transition: transform 1.5s;
+  border-radius: 20px;
+}
+.block:hover{
+  transform: scale(1.02);
+}
+
 .overlay {
   position: absolute;
   bottom: 0;

@@ -81,12 +81,14 @@ html {
 .button:hover {
   background-color: #555;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1080px) {
   .column  {
-    width: 50%;
+    width: 40%;
+    margin-left: 10%;
+    transform: translateX(-10%);
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
     display: block;
@@ -191,6 +193,13 @@ html {
 .link-effect2:hover{
   color:black
 }
+.block{
+  transition: transform 1.5s;
+  border-radius: 20px;
+}
+.block:hover{
+  transform: scale(1.02);
+}
 </style>
 </head>
 <body>
@@ -200,10 +209,11 @@ html {
           <h1 style="font-family: 'Proza Libre', sans-serif;color: white;">About Us</h1>
         </div>
     </div>
-  <div class="container" style="box-shadow: 2px 2px 2px 2px #888;">
+    <br>
+  <div class="container block" style="box-shadow: 0px 0px 5px #888;">
     <br>
   <p>
-    OUR GUIDING PRINCIPLES: <br><br>
+    <span style="font-size: 20px;">OUR GUIDING PRINCIPLES:</span> <br><br>
 
     Empowerment of the Blind. <br><br>
     
@@ -230,14 +240,14 @@ html {
   </p>
   </div>
   <br><br>
-  <div class="container" id="vision" style="box-shadow: 2px 2px 2px 2px #888;">
+  <div class="container block" id="vision" style="box-shadow: 0px 0px 5px #888;">
     <br>
     <p>
-    <span style="text-decoration: underline;">Vision </span><br><br>
+    <span style="font-size: 20px;">Vision </span><br><br>
 
     Improve the quality of life for the Visually Challenged.<br><br>
  
-    <span style="text-decoration: underline;">Mission</span><br><br>
+    <span style="font-size: 20px;">Mission</span><br><br>
 
     Assist Blind persons & organizations supporting them, to promote an understanding of their needs & to enable the availability of better quality of services nationally & internationally.
 
@@ -254,8 +264,9 @@ html {
     <div class="column">
       <a title="" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Jane Doe: Chairperson of Organisation" style="text-decoration: none;">
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
-      <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
+      <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;"><br>
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Pranav Lal</h4>
     </div>
   
     <div class="column">
@@ -263,6 +274,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Manjari Lopez</h4>
     </div>
     
     <div class="column">
@@ -270,6 +282,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Inderjit Lal</h4>
     </div>
 
     <div class="column">
@@ -277,6 +290,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">BL Bhardwaj</h4>
     </div>
   </div>
 
@@ -286,6 +300,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Col Pradeep Kapoor</h4>
     </div>
   
     <div class="column">
@@ -293,6 +308,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Rakesh Sahni</h4>
     </div>
     
     <div class="column">
@@ -300,6 +316,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Wg Cdr D Bhardwaj</h4>
     </div>
 
     <div class="column">
@@ -307,6 +324,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Vinod Ramchandani</h4>
     </div>
   </div>
 
@@ -316,6 +334,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Lt Gen AK Lamba</h4>
     </div>
   
     <div class="column">
@@ -323,6 +342,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Lt Gen Handa</h4>
     </div>
     
     <div class="column">
@@ -330,6 +350,7 @@ html {
         <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
       <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
       </div></a>
+      <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Rajan Jauhar</h4>
     </div>
   </div>
 </div>
@@ -343,7 +364,7 @@ html {
   <br>
   <br>
   <div class="container" style="justify-content: center;">
-    <h2 style="text-align:center;font-family: 'Proza Libre', sans-serif;">THE DIRECTORS</h2>
+    <h2 style="text-align:center;font-family: 'Proza Libre', sans-serif;text-decoration: underline;">THE DIRECTORS</h2>
     <br>
     <div class="row" style="font-family: 'Proza Libre', sans-serif;align-items: center;">
       <div class="column">
@@ -351,6 +372,7 @@ html {
           <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
         <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
         </div></a>
+        <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Jyoti Chopra</h4>
       </div>
     
       <div class="column">
@@ -358,6 +380,7 @@ html {
           <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
         <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
         </div></a>
+        <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Janice Masih</h4>
       </div>
       
       <div class="column">
@@ -365,6 +388,7 @@ html {
           <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
         <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
         </div></a>
+        <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Vijay Matange</h4>
       </div>
   
       <div class="column">
@@ -372,6 +396,16 @@ html {
           <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
         <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
         </div></a>
+        <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Col GS Grover</h4>
+      </div>
+    </div>
+    <div class="row" style="font-family: 'Proza Libre', sans-serif;align-items: center;justify-content: center;">
+      <div class="column">
+        <a title="" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Jane Doe: Chairperson of Organisation" style="text-decoration: none;">
+          <div style="padding: 2px;width: 250px;height: 250px;border-radius: 50%;border: 5px solid #29586b">
+        <img src="image/quote-bg.jpg" alt="Jane" style="width:100%;height: 100%;border-radius: 50%;">
+        </div></a>
+        <h4 style="text-align:center;margin-top: 8px;font-family: 'Proza Libre', sans-serif;">Indu Ramchandani</h4>
       </div>
     </div>
   </div>
