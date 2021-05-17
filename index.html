@@ -31,7 +31,7 @@
       <div class="bg bg2"></div>
       <div class="bg bg3"></div>
     
-      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;padding: 30px;background:linear-gradient(180deg,#29627a,#367e9c,#3c90c0)">
+      <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;padding: 30px;background:linear-gradient(180deg,#52b2db,#58b7e0,#6cb5df)">
         
         <div class="container" style="text-align: center;">
           <!--
@@ -764,16 +764,16 @@
         
         <div class="container-fluid blur fadeout" style="align-items: center;align-content: center;">  
         </div>
-        <div class="container-fluid fadeout" style="position: absolute;top: 50%;z-index: 110;width: 100%;" data-aos="fade-in" data-aos-delay="3000">
-          <h5 style="text-align: center;color: black;font-family: 'Proza Libre', sans-serif;color:rgb(10, 84, 168)">Click to Reveal</h5>
+        <div class="container-fluid fadeout" id="remove" style="position: absolute;top: 50%;z-index: 110;width: 100%;" data-aos="fade-in" data-aos-delay="3000">
+          <h5 id="remove" style="text-align: center;color: black;font-family: 'Proza Libre', sans-serif;color:rgb(10, 84, 168)">Click to Reveal</h5>
         </div>
 
         <script>
           $(document).ready(function(){
             $(".fadeout").click(function(){
-              $(".fadeout").fadeOut();
+              $(".fadeout").fadeOut('slow');
+              $( ".fadeout" ).prop( "disabled", true );
             });
-            
           });
         </script>
         <script>
