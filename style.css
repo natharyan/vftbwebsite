@@ -349,18 +349,27 @@ div.image:hover img{
   display: table;
 }
 
-
-button.btn{
+.btn4{
+  display: block;
+  width: 180px;
+  margin: auto;
+  transition: 1.5s ease;
+  text-align: center;
+  }
+.btn4:hover{
+  transform: scale(1.1);
+  }
+.btn1{
   background-color:white;
   border: 1.8px solid black;
-  margin-bottom: 8px;
-  transition-duration: 1.5s;
+  margin-bottom: 2px;
+  transition: transform 1.5s ease;
+  padding: 10px;
+  width: fit-content;
 }
 
 
-.btn4:hover button.btn{
-  font-size: larger;
-}
+
 
 .btn3{
   border:5px solid darkorange;
