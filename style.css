@@ -361,6 +361,7 @@ div.image:hover img{
   }
 .btn1{
   background-color:white;
+  border-radius:20px;
   border: 1.8px solid black;
   margin-bottom: 2px;
   transition: transform 1.5s ease;
