@@ -390,7 +390,7 @@ div.image:hover img{
   /*background-image: linear-gradient(-60deg, #00C9FF 50%, #92FE9D 50%);*/
   /*background-image: linear-gradient(-60deg, #00c3ff 50%, #ffff1c 50%);*/
   /*background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);*/
-  background-image: linear-gradient(-60deg, #b8b8b8 50%,  #538ACA 50%);
+  background-image: linear-gradient(-60deg, #f8f8f8 50%,  #538ACA 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
