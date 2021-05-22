@@ -8,10 +8,10 @@
 html {
   scroll-behavior: smooth;
 }
-
-&:nth-last-child(1) {
-    height: 100vh;
+body{
+  overflow-x: hidden;
 }
+
 
 *, *:before, *:after {
   box-sizing: border-box;
