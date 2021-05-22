@@ -563,7 +563,7 @@ z-index: -1;
 }
 
 .wrapper2 {
-  background: linear-gradient(60deg,#373B44,#464f64,#506a7a,#437261);
+  background: #373B44;
   background-size: 600% 100%;
   animation: gradient 8s linear infinite;
   animation-direction: alternate;
