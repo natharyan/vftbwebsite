@@ -14,22 +14,43 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+  
+
 </head>
 <style>
-  .card{
+  .card {
     border-radius: 10px 10px 0px 0px;
     text-align: center;
     box-shadow: none;
     padding: 0px;
   }
+
+  .panel,
+  .flip {
+    padding: 5px;
+    text-align: left;
+    background-color: white;
+    border-bottom: solid 1px #c3c3c3;
+    font-family: 'Proza Libre', sans-serif;
+  }
+
+  .panel {
+    padding: 50px;
+    display: none;
+  }
+  .flip{
+    padding: 15px;
+    font-weight: 600;
+  }
 </style>
+
 <body>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -39,17 +60,18 @@
 
 
 
-  <div class="jumbotron jumbotron-fluid wrapper2" style="color:black" id="principles">
+  <div class="jumbotron jumbotron-fluid wrapper2" style="color:black" class="principles">
     <div class="container" style="text-align: center;">
       <h1 style="font-family: 'Proza Libre', sans-serif;color: white;">Donate to Us</h1>
     </div>
   </div>
-
+  
   <div class="container">
     <div class="row" style="margin-bottom: 30px;">
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png" style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>General Donation</p>
           </div>
@@ -57,7 +79,8 @@
       </div>
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png" style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>Sponsor Projects/Small Projects</p>
           </div>
@@ -65,7 +88,8 @@
       </div>
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png" style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>Sponsor an Educational Institution</p>
           </div>
@@ -75,7 +99,8 @@
     <div class="row">
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png" style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>Sponsor Group of Blind Students</p>
           </div>
@@ -83,7 +108,8 @@
       </div>
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png" style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>Sponsor Sports Institution for the Blind</p>
           </div>
@@ -91,20 +117,53 @@
       </div>
       <div class="col-md-4" style="margin-bottom: 15px;">
         <div class="card"> 
-          <img alt="health checkup" src="image/image7.png"style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
+          <img alt="health checkup" src="image/image7.png"
+            style="width:100%;border-radius: 10px;margin-bottom: 15px;box-shadow: 0px 0px 3px #888;" data-scroll-zoom />
           <div class="container">
             <p>Sponsor Assistive Devices</p>
           </div>
         </div>
       </div>
     </div>
+    <br><br>
+    <div class="flip f1">Cash<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+    <div class="panel p1"><p>Cash Handover:</p><br><p><i class="fas fa-home mx-2"></i><a href="https://goo.gl/maps/ASWAgxt5KojtVTZC6" style="text-decoration: underline;color: black;" target="_blank">D-381, Defence Colony Delhi, India 110024</a></p></div>
+    <div class="flip f2">Cheque<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+    <div class="panel p2"><p>Volunteers for the Blind Foundation, <br><br>ICICI Bank, <br><br>acct no 630001022559, <br><br>IFSC code ICIC0006300</p></div>
+    <div class="flip f3">Bank Transfer<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+    <div class="panel p3"><p>Volunteers for the Blind Foundation, <br><br>ICICI Bank, <br><br>acct no 630001022559, <br><br>IFSC code ICIC0006300</p></div>
+    <div class="flip f4">Paytm<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+    <div class="panel p4">Hello world!</div>
+    <br><br><br>
   </div>
 
 
   <a class="nav-link link-effect2" href="index.html"
-  style="background-color: white;border-radius: 15px;box-shadow: 0px 0px 5px #888;font-size: 20px;position: fixed;left: 15px;bottom: 15px;z-index: 90;"><i
-    class="fas fa-angle-left" style="margin-right: 5px;"></i>Back</a>
-
+    style="background-color: white;border-radius: 15px;box-shadow: 0px 0px 5px #888;font-size: 20px;position: fixed;left: 15px;bottom: 15px;z-index: 90;"><i
+      class="fas fa-angle-left" style="margin-right: 5px;"></i>Back</a>
+  
+  <script>
+    $(document).ready(function () {
+      $(".f1").click(function () {
+        $(".p1").slideToggle("slow");
+      });
+    });
+    $(document).ready(function () {
+      $(".f2").click(function () {
+        $(".p2").slideToggle("slow");
+      });
+    });
+    $(document).ready(function () {
+      $(".f3").click(function () {
+        $(".p3").slideToggle("slow");
+      });
+    });
+    $(document).ready(function () {
+      $(".f4").click(function () {
+        $(".p4").slideToggle("slow");
+      });
+    });
+  </script>
 </body>
 
 </html>
