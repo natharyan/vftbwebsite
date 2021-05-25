@@ -183,11 +183,11 @@ body{
 
 /*black on hover*/
 .link-effect2{
-  color: #888888;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 .link-effect2:hover{
-  color:black
+  color:darkorange;
 }
 
 

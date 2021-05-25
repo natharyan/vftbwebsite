@@ -20,6 +20,23 @@
     .wrapper2 {
     background: #373B44;
   }
+  .panel,
+  .flip {
+    padding: 5px;
+    text-align: left;
+    background-color: white;
+    border-bottom: solid 1px #c3c3c3;
+    font-family: 'Proza Libre', sans-serif;
+  }
+
+  .panel {
+    padding: 50px;
+    display: none;
+  }
+  .flip{
+    padding: 15px;
+    font-weight: 600;
+  }
   </style>
   </head>
   <body style="font-family: 'Proza Libre', sans-serif;">
@@ -54,46 +71,51 @@
     <br>
 
     <div class="container">
-      <h2>Directives by the Board of Directors:</h2>
-      <br>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Bombay started project relief
-      </div>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Delhi reqruited 2 new volunteers
-      </div>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Ranchi started the relief initiative
-      </div>
-    </div>
-    <br>
-
-    <div class="container">
-      <h2>Directives by the Board of Trustees:</h2>
-      <br>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Bombay started project relief
-      </div>
-      <div class="alert bg-primary  alert-dismissible text-white">
-        <strong>Info!</strong> Delhi reqruited 2 new volunteers
-      </div>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Ranchi started the relief initiative
+      <div class="flip f1">Directives by the Board of Trustees<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="panel p1">
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Bombay started project relief
+        </div>
+        <div class="alert bg-primary  alert-dismissible text-white">
+          <strong>Info!</strong> Delhi reqruited 2 new volunteers
+        </div>
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Ranchi started the relief initiative
+        </div>
       </div>
     </div>
     <br>
+    <br>
 
     <div class="container">
-      <h2>Directives by the Forum:</h2>
-      <br>
-      <div class="alert bg-primary  alert-dismissible text-white">
-        <strong>Info!</strong> Bombay started project relief
+      <div class="flip f2">Directives by the Board of Directors<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="panel p2">
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Bombay started project relief
+        </div>
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Delhi reqruited 2 new volunteers
+        </div>
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Ranchi started the relief initiative
+        </div>
       </div>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Delhi reqruited 2 new volunteers
-      </div>
-      <div class="alert bg-primary alert-dismissible text-white">
-        <strong>Info!</strong> Ranchi started the relief initiative
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="flip f3">Directives by the Forum<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="panel p3">
+        <div class="alert bg-primary  alert-dismissible text-white">
+          <strong>Info!</strong> Bombay started project relief
+        </div>
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Delhi reqruited 2 new volunteers
+        </div>
+        <div class="alert bg-primary alert-dismissible text-white">
+          <strong>Info!</strong> Ranchi started the relief initiative
+        </div>
       </div>
     </div>
     <br>
@@ -292,6 +314,7 @@
   </div>
   <br>
   <br>
+  <!--
   <div class="container">
     <h3 style="text-align:center;font-family: 'Proza Libre', sans-serif;">List of Forum Members</h3>
     <br>
@@ -335,11 +358,33 @@
       </li>
     </ul>
   </div>
+  -->
   <br>
   <br>
-  <a class="nav-link link-effect2" href="select.html" style="background-color: white;border-radius: 15px;box-shadow: 0px 0px 5px #888;font-size: 20px;position: fixed;left: 15px;bottom: 15px;"><i class="fas fa-angle-left" style="margin-right: 5px;"></i>Back</a>
+  <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 15px;z-index: 50;"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
+
 
     <div class="loading" delay-hide="50000"></div>
+    <script>
+      $(document).ready(function () {
+      $(".p1").slideToggle("slow");
+      $(".f1").click(function () {
+        $(".p1").slideToggle("slow");
+        });
+      });
+      $(document).ready(function () {
+        $(".p2").slideToggle("slow");
+        $(".f2").click(function () {
+          $(".p2").slideToggle("slow");
+        });
+      });
+      $(document).ready(function () {
+        $(".p3").slideToggle("slow")
+        $(".f3").click(function () {
+          $(".p3").slideToggle("slow");
+        });
+      });
+    </script>
         <script>
           $(window).on("load",function(){
             $(".loading").fadeOut("slow")
