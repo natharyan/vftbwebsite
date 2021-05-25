@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&family=Cairo:wght@700&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
 
   <style>
@@ -20,7 +21,23 @@
   background: #373B44;
   
   }
+  .panel,
+  .flip {
+    padding: 5px;
+    text-align: left;
+    background-color: white;
+    border-bottom: solid 1px #c3c3c3;
+    font-family: 'Proza Libre', sans-serif;
+  }
 
+  .panel {
+    padding: 50px;
+    display: none;
+  }
+  .flip{
+    padding: 15px;
+    font-weight: 600;
+  }
   </style>
   </head>
   <body style="font-family: 'Proza Libre', sans-serif;">
@@ -50,34 +67,41 @@
         </div>
     </div>
     <div class="container">
-      <h2 style="font-family: 'Proza Libre', sans-serif;">Updates:</h2>
+      
       <br>
-      <div class="alert bg-info text-white alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Info!</strong> Bombay started project relief
+      <div class="flip f1">Updates<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="panel p1">
+        <div class="alert bg-info text-white alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Info!</strong> Bombay started project relief
+        </div>
+        <div class="alert bg-info text-white alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Info!</strong> Delhi reqruited 2 new volunteers
+        </div>
+        <div class="alert bg-info text-white alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Info!</strong> Ranchi started the relief initiative
+        </div>
       </div>
-      <div class="alert bg-info text-white alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Info!</strong> Delhi reqruited 2 new volunteers
-      </div>
-      <div class="alert bg-info text-white alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Info!</strong> Ranchi started the relief initiative
-      </div>
+      
     </div>
     <br>
     <div class="container">
-      <h2 style="font-family: 'Proza Libre', sans-serif;">Directives by the City Councils:</h2>
       <br>
-      <div class="alert bg-primary text-white alert-dismissible">
-        <strong>Info!</strong> Bombay started project relief
+      <div class="flip f2">Directives by the City Councils<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="panel p2">
+        <div class="alert bg-primary text-white alert-dismissible">
+          <strong>Info!</strong> Bombay started project relief
+        </div>
+        <div class="alert bg-primary text-white alert-dismissible">
+          <strong>Info!</strong> Delhi reqruited 2 new volunteers
+        </div>
+        <div class="alert bg-primary text-white alert-dismissible">
+          <strong>Info!</strong> Ranchi started the relief initiative
+        </div>
       </div>
-      <div class="alert bg-primary text-white alert-dismissible">
-        <strong>Info!</strong> Delhi reqruited 2 new volunteers
-      </div>
-      <div class="alert bg-primary text-white alert-dismissible">
-        <strong>Info!</strong> Ranchi started the relief initiative
-      </div>
+      
     </div>
     <br>
     <div class="container-fluid mt-3">
@@ -901,6 +925,20 @@
       
 
   <div class="loading"></div>
+  <script>
+    $(document).ready(function () {
+      $(".p1").slideToggle("slow");
+      $(".f1").click(function () {
+        $(".p1").slideToggle("slow");
+      });
+    });
+    $(document).ready(function () {
+      $(".p2").slideToggle("slow");
+      $(".f2").click(function () {
+        $(".p2").slideToggle("slow");
+      });
+    });
+  </script>
   <script>
     $(window).on("load",function(){
       $(".loading").fadeOut("slow")
