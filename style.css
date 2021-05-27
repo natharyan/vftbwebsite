@@ -181,7 +181,7 @@ body{
   transform: scaleX(1);
 }
 
-/*black on hover*/
+/*orange on hover*/
 .link-effect2{
   color: #ffffff;
   transition: all 0.3s ease-in-out;
@@ -694,7 +694,7 @@ a.button.one:hover:after{
   position: fixed;
   top: 0;
   left: 0;
-  background: #29586b;
+  background: #4fade4;
   z-index: 99;
 }
 .loading:after {
