@@ -676,15 +676,15 @@ a.button.one:hover:before{
 	width: 102%;
 	height: 102%;
 	transition: all 0.3s ease;
-  border-top: 2px solid rgb(2, 2, 2);
-	border-right: 2px solid rgb(0, 0, 0);
+  border-top: 2.5px solid rgb(2, 2, 2);
+	border-right: 2.5px solid rgb(0, 0, 0);
 }
 a.button.one:hover:after{
   width: 102%;
 	height: 102%;
 	transition: all 0.3s ease;
-  border-bottom: 2px solid rgb(0, 0, 0);
-	border-left: 2px solid rgb(0, 0, 0);
+  border-bottom: 2.5px solid rgb(0, 0, 0);
+	border-left: 2.5px solid rgb(0, 0, 0);
 }
 
 .loading {
