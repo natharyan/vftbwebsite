@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
-
+    <script src="js.js"></script>
   <style>
     .wrapper2 {
   background: #373B44;
@@ -925,20 +925,26 @@
    <br>
 
    <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 15px;z-index: 50;"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
-
+   
+   
+   <input type="text" id="tmessage" placeholder="Say Hi.." title="Type a message">
+   <button onclick="message()">Send</button>
    <div id="result"></div>
-
+   
    <script>
-   // Check browser support
-   if (typeof(Storage) !== "undefined") {
-     // Store
-     localStorage.setItem("lastname", "Smith");
-     // Retrieve
-     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-   } else {
-     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-   }
-   </script> 
+     function message(){
+      var x = document.getElementById("tmessage").value;
+    if (typeof(Storage) !== "undefined") {
+      // Store
+      localStorage.setItem("textmessage", x);
+      // Retrieve
+      document.getElementById("result").innerHTML = localStorage.getItem("textmessage");
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+    document.getElementById("tmessage").value = "";
+  }
+   </script>
 
   <div class="loading"></div>
 
