@@ -925,8 +925,8 @@
    <br>
 
    <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 15px;z-index: 50;"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
-   
-   
+   <!--
+   <input type="text" id="t1message" placeholder="Your name(optional)" title="Type a message">
    <input type="text" id="tmessage" placeholder="Say Hi.." title="Type a message">
    <button onclick="message()">Send</button>
    <div id="result"></div>
@@ -945,9 +945,19 @@
     document.getElementById("tmessage").value = "";
   }
    </script>
-
+-->
   <div class="loading"></div>
-
+  <script type="text/javascript">
+    var chatango = document.createElement('script');
+    chatango.setAttribute('type','text/javascript');
+    chatango.setAttribute('id','cid0020000283212371262');
+    chatango.setAttribute('data-cfasync','false');
+    chatango.setAttribute('async',true);
+    chatango.setAttribute('src','//st.chatango.com/js/gz/emb.js');
+    chatango.setAttribute('style','width: 100%;height: 471px;');
+    chatango.innerHTML = '{"handle":"vftbchat","arch":"js","styles":{"a":"383838","b":100,"c":"FFFFFF","d":"FFFFFF","k":"383838","l":"383838","m":"383838","n":"FFFFFF","p":"10","q":"383838","r":100,"usricon":0.99,"cnrs":"0.35","fwtickm":1}}';
+    document.body.appendChild(chatango);
+</script>
   <script>
     $(document).ready(function () {
       $(".p1").slideToggle("slow");
