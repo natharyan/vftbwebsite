@@ -947,7 +947,7 @@
   }
    </script>
 -->
-  
+  <div class="loading"></div>
   <h1 style="visibility: hidden;">Chatspace located here:</h1>
   <script type="text/javascript">
     var chatango = document.createElement('script');
@@ -974,7 +974,11 @@
       });
     });
   </script>
-  
+  <script>
+    $(window).on("load",function(){
+      $(".loading").fadeOut("slow")
+    });
+  </script>
   
   </body>
 </html>
