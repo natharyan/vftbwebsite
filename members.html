@@ -926,7 +926,19 @@
 
    <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 15px;z-index: 50;"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
 
-      
+   <div id="result"></div>
+
+   <script>
+   // Check browser support
+   if (typeof(Storage) !== "undefined") {
+     // Store
+     localStorage.setItem("lastname", "Smith");
+     // Retrieve
+     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+   } else {
+     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+   }
+   </script> 
 
   <div class="loading"></div>
 
