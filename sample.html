@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style> 
+        input[type="checkbox"]{
+            appearance: none;
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            /*background-image: url(image/uparrow.png);*/
+            position: absolute;
+            bottom: 15px;
+            transition: top 2s ease;
+            transition-duration: 2s;
+        }
+        input[type="checkbox"]::before{
+            content: "\f077";  /* this is your text. You can also use UTF-8 character codes as I do here */
+            font-family: FontAwesome;
+            margin: auto;
+            position:absolute;
+            font-size: 50px;
+        }
+        
+        input.checkbox:checked{
+            background-color: hotpink;
+            top: 15px;
+        }
+        </style>
+</head>
+  <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div class="container-fluid" style="width: 100vw;height: 100vh;background-color: grey;z-index: 90;padding: 0px">
+    <div class="storiesempty" style="height: 94%;"></div>
+    <div class="container-fluid" style="width: 100%;padding-top: 10px;padding: 0px;">
+    <div style="background-color:#02193d;width:200px;height: 36px;text-align: center;margin-left: 50%;transform: translateX(-50%);border-radius: 15px 15px 0px 0px;">
+        <a class="storiesbtn"><i class="fas fa-chevron-up" id="slidearrow" style="color: white;font-size: 33px;"></i></a>
+    </div>
+    <div class="container-fluid" style="background-color: #02193d;width: 100%;">
+    <br><br>
+
+        <p style="color: white;">
+            Procedure:
+            1) On the homescreen a popup or something comes up: 'Want to share your story? We want to listen.'
+            2) They will be asked to click a button if they want to contribute. This will take them to a page which will state the requirements:
+            1 - writing
+            2 - name and details (optional, else posted anonymously)
+            3 - any related pictures to the topic (if you don't wish to give any               
+            then we shall provide some artwork instead to be posted along with your writing)
+            4 - attach all the writings, pictures and your details (optional) to the following email address
+            5 - if you wish to share your story in a form other than writing then please do feel free to do so. Attach a related file and a brief description of what you have used to express your story/thoughts to the following email address
+        </p>
+        <br><br><br>
+    </div>
+    </div>
+    </div>
+<script>
+    $(document).ready(function(){
+      $(".storiesbtn").click(function(){
+        $(".storiesempty").slideToggle("slow");
+        $(this).find('i').toggleClass('fas fa-chevron-down fas fa-chevron-up')
+      });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

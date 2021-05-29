@@ -749,3 +749,8 @@ a.button.one:hover:after{
 .blur h5{
   filter: none;
 }
+
+.stories{
+  bottom: 0px;
+  background-color: #000;
+}
