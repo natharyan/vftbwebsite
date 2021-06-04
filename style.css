@@ -183,7 +183,7 @@ body{
 
 /*orange on hover*/
 .link-effect2{
-  color: #ffffff;
+  color: black;
   transition: all 0.3s ease-in-out;
 }
 .link-effect2:hover{

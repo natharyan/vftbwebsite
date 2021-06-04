@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>VFTB | Commitment and Trust</title>
+  <title>Commitment and Trust | VFTB</title>
   <link rel="shortcut icon" type="image/jpeg" href="image/favicon.png">
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -82,13 +82,16 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-left: auto;">
 
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="font-family: 'Acme', sans-serif;margin-right: 25px;">
+            <a class="nav-link link-effect2" href="stories.html" style="font-family: 'Kaushan Script', cursive;font-weight:bold;">STORIES</a>
+          </li>
           <li class="nav-item dropdown" style="margin-right: 25px;font-family: 'Acme', sans-serif;">
             <!--ON HOME PAGE HAVE IDEOLOGY, CREATE ANOTHER PAGE FOR GUIDING PRINCIPLES, TRUSTEES AND CONTRIBUTORS-->
             <a class="nav-link dropdown-toggle link-effect2" href="#" id="navbardrop" data-toggle="dropdown">ABOUT</a>
             <!--Make dropdown for Idealogy & Team-->
             <div class="dropdown-menu" style="font-family: 'Acme', sans-serif;">
-              <a class="dropdown-item" href="#about">Who Are We?</a>
               <a class="dropdown-item" href="about.html">About Us</a>
+              <a class="dropdown-item" href="#about">Who Are We?</a>
               <a class="dropdown-item" href="about.html#principles">General Principles</a>
               <a class="dropdown-item" href="about.html#vision">Vision and Mission</a>
               <a class="dropdown-item" href="about.html#team">Leadership</a>
@@ -831,9 +834,11 @@
           });
         </script>
         -->
-    <script>
-      $('.loading').delay(2000).fadeOut('slow');
-    </script>
+        <script>
+          $(window).on("load",function(){
+            $(".loading").fadeOut("slow")
+          });
+        </script>
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0"
