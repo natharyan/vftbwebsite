@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
-
+    <script src="loader.js"></script>
   <style>
     .wrapper2 {
     background: #373B44;
@@ -357,9 +357,16 @@
   <br>
   <br>
   <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 15px;z-index: 50;" title="back"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
-
-
+  <div class="loading">
+    <div class="loader">
+      <div class="image1">
+        <i class="fa fa-codepen"></i>
+      </div>
+      <span></span>
+    </div>
+    <!--
     <div class="loading" delay-hide="50000"></div>
+    -->
     <script>
       $(document).ready(function () {
       $(".p1").slideToggle("slow");
@@ -380,6 +387,24 @@
         });
       });
     </script>
+      <script>
+        $(document).ready(function () {
+          var counter = 0;
+    
+          // Start the changing images
+          setInterval(function () {
+            if (counter == 3) {
+              counter = 0;
+            }
+    
+            changeImage(counter);
+            counter++;
+          }, 3000);
+    
+          // Set the percentage off
+          loading();
+        });
+      </script>
         <script>
           $(window).on("load",function(){
             $(".loading").fadeOut("slow")

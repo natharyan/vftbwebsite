@@ -16,6 +16,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
+    <script src="loader.js"></script>
   <style>
     .wrapper2 {
   background: #373B44;
@@ -942,7 +943,17 @@
   }
    </script>
 -->
+<!--
   <div class="loading"></div>
+-->
+<div class="loading">
+  <div class="loader">
+    <div class="image1">
+      <i class="fa fa-codepen"></i>
+    </div>
+    <span></span>
+  </div>
+</div>
   <h1 style="visibility: hidden;">Chatspace located here:</h1>
   <script type="text/javascript">
     var chatango = document.createElement('script');
@@ -967,6 +978,24 @@
       $(".f2").click(function () {
         $(".p2").slideToggle("slow");
       });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var counter = 0;
+
+      // Start the changing images
+      setInterval(function () {
+        if (counter == 3) {
+          counter = 0;
+        }
+
+        changeImage(counter);
+        counter++;
+      }, 3000);
+
+      // Set the percentage off
+      loading();
     });
   </script>
   <script>
