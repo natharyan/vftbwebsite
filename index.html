@@ -25,7 +25,34 @@
   <script src="loader.js"></script>
 
 </head>
+<style>
+    @media screen and (max-width: 1080px) {
+    .vftb{
+      background: url('https://source.unsplash.com/JYjZDhUjaPU/2000x1600');
+    }
+    .page{
+      background: url('https://source.unsplash.com/1sfGgGTiekY/2000x1800');
+    }
+    }
 
+  @media screen and (min-width: 801px) {
+    .vftb{
+    background: url('https://source.unsplash.com/JYjZDhUjaPU/1200x800');
+    }
+    .page{
+      background: url('https://source.unsplash.com/1sfGgGTiekY/1200x1600');
+    }
+    }
+
+  @media screen and (max-width: 800px) {
+  .vftb{
+    background: url('https://source.unsplash.com/JYjZDhUjaPU/500x600');
+  }
+  .page{
+      background: url('https://source.unsplash.com/1sfGgGTiekY/700x900');
+    }
+  }
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Optional JavaScript -->
@@ -44,11 +71,8 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     -->
-  <div class="jumbotron jumbotron-fluid"
-    style="margin-bottom: 0px;padding: 30px;background: url('https://source.unsplash.com/JYjZDhUjaPU/2000x1800');background-repeat: no-repeat;
-                                                                                    background-size: cover;
-                                                                                    background-attachment: fixed;
-                                                                                    background-position: center center;">
+  <div class="jumbotron jumbotron-fluid vftb"
+    style="margin-bottom: 0px;padding: 30px;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center center;">
 
     <div class="container" style="text-align: center;">
       <!--
@@ -74,7 +98,7 @@
     </div>
   </div>
 
-<div class="container-fluid"  style="height: 100%;width:100%;background: url('https://source.unsplash.com/1sfGgGTiekY/2000x1600');background-repeat: no-repeat;
+<div class="container-fluid page"  style="height: 100%;width:100%;background-repeat: no-repeat;
                                       background-size: cover;
                                       background-attachment: fixed;
                                       background-position: center center;padding: 0px;">
