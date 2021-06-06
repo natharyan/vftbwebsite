@@ -22,13 +22,28 @@
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
   <script src="script.js"></script>
   <script src="loader.js"></script>
+<style>
+  @media screen and (min-resolution: 1.5dppx) {
+  .vftb{
+    background-image: url('https://source.unsplash.com/JYjZDhUjaPU/384x384');
+  }
+  .page{
+    background-image: url('https://source.unsplash.com/1sfGgGTiekY/384x384');
+  }
+  }
 
+  @media screen and (min-resolution: 2dppx) {
+  .vftb{
+    background-image: url('https://source.unsplash.com/JYjZDhUjaPU/2000x1080');
+  }
+  .page{
+    background-image: url('https://source.unsplash.com/1sfGgGTiekY/1920x1080');
+  }
+  }
+</style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background: url('https://source.unsplash.com/4HcwKkW6osw/2000x2000');background-repeat: no-repeat;
-                                                                      background-size: cover;
-                                                                      background-attachment: fixed;
-                                                                      background-position: center center;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -46,11 +61,8 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     -->
-  <div class="jumbotron jumbotron-fluid"
-    style="margin-bottom: 0px;padding: 30px;background: url('https://source.unsplash.com//FJ7yKxzhzms/2000x1400');background-repeat: no-repeat;
-                                                                                    background-size: cover;
-                                                                                    background-attachment: fixed;
-                                                                                    background-position: center center;">
+  <div class="jumbotron jumbotron-fluid vftb"
+    style="margin-bottom: 0px;padding: 30px;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center center;">
 
     <div class="container" style="text-align: center;">
       <!--
@@ -76,6 +88,7 @@
     </div>
   </div>
 
+<div class="page" style="background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center center;">
 
   <nav class="navbar navbar-expand-md bg-light navbar-light"
     style="box-shadow: 15px 0px 15px #444444;max-height: fit-content;z-index: 10;">
@@ -731,7 +744,7 @@
       });
     });
   </script>
-
+</div>
   <footer class="text-center text-lg-start bg-light" id="footer"
     style="font-family: 'Acme', sans-serif;position: relative;z-index: 92;">
     <!-- Section: Social media -->
