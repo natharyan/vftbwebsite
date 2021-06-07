@@ -2,15 +2,15 @@
 
   function changeImage(counter) {
     var images = [
-      '<i class="fa fa-fighter-jet"></i>',
-      '<i class="fa fa-gamepad"></i>',
-      '<i class="fa fa-headphones"></i>',
-      '<i class="fa fa-cubes"></i>',
-      '<i class="fa fa-paw"></i>',
-      '<i class="fa fa-rocket"></i>',
-      '<i class="fa fa-ticket"></i>',
-      '<i class="fa fa-pie-chart"></i>',
-      '<i class="fa fa-codepen"></i>'
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
+      '<i class="fas fa-blind"></i>',
     ];
 
     $(".loader .image1").html("" + images[counter] + "");
