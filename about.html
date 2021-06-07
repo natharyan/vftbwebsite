@@ -185,19 +185,19 @@
     }
   }
   .loading {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #4fade4;
-    z-index: 99;
-  }
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 99;
+}
 
-  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 .loader {
   width: 100px;
-  height: 80px;
+  height: 100px;
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 0;
   margin: auto;
@@ -212,6 +212,7 @@
   transform-origin: bottom center;
   animation: 2s rotate1 infinite;
   opacity: 0;
+  text-align: center;
 }
 .loader span {
   display: block;
@@ -573,7 +574,7 @@
   <div class="loading">
     <div class="loader">
       <div class="image1">
-        <i class="fa fa-codepen"></i>
+        <i class="fas fa-blind"></i>
       </div>
       <span></span>
     </div>

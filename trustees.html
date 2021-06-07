@@ -14,11 +14,13 @@
     
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+    <script src="loader.js"></script>
 
   <style>
     .wrapper2 {
     background: #373B44;
   }
+  
   </style>
   </head>
  
@@ -497,10 +499,11 @@
     <br>
     <br>
     <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 23px;z-index: 50;" title="Back"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
+ 
     <div class="loading">
       <div class="loader">
         <div class="image1">
-          <i class="fa fa-codepen"></i>
+          <i class="fas fa-blind"></i>
         </div>
         <span></span>
       </div>
@@ -549,11 +552,11 @@
         loading();
       });
     </script>
-        <script>
-          $(window).on("load",function(){
-            $(".loading").fadeOut("slow")
-          });
-        </script>
+    <script>
+      $(window).on("load", function () {
+        $(".loading").fadeOut("slow")
+      });
+    </script>
 
   </body>
 </html>

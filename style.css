@@ -715,7 +715,7 @@ a.button.one:hover:after{
   position: fixed;
   top: 0;
   left: 0;
-  background: #4fade4;
+  background: white;
   z-index: 99;
 }
 /*
