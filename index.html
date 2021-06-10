@@ -25,10 +25,11 @@
   <style>
     @media screen and (max-width: 300px) {
       .vftb {
-        /*this has background-position set to: top center*/
+        /*this has background-position set to: top center
         background-image: url('https://source.unsplash.com/nNNxBHA4ops/500x900');
+        */
+        background-color: #3e8ccf;
       }
-
       .vftb1 {
         visibility: hidden;
         display: none;
@@ -37,19 +38,26 @@
       .vftb2 {
         visibility: visible;
       }
+      /*
+
 
       .page {
         background-image: url('https://source.unsplash.com/Z3NceSeZqgI/500x2000');
         background-repeat: repeat-y;
       }
+      */
+      .mobile{
+        visibility: visible;
+      }
     }
 
     @media screen and (min-width: 301px) {
       .vftb {
-        background-image: url('https://source.unsplash.com/nNNxBHA4ops/500x900');
-
+        background-color: #3e8ccf;
       }
-
+      .mobile{
+        visibility: visible;
+      }
       .vftb1 {
         visibility: hidden;
         display: none;
@@ -59,20 +67,28 @@
         visibility: visible;
         margin: auto;
       }
+      /*
+      .vftb {
+        background-image: url('https://source.unsplash.com/nNNxBHA4ops/500x900');
+
+      }
+
+
 
       .page {
         background-image: url('https://source.unsplash.com/Z3NceSeZqgI/500x2000');
         background-repeat: repeat-y;
       }
-
+      */
     }
 
     @media screen and (max-width: 500px) {
       .vftb {
-        /*ackground-image: url('https://source.unsplash.com/nNNxBHA4ops/500x900');*/
-        background-repeat: repeat-y;
+        background-color: #3e8ccf;
       }
-
+      .mobile{
+        visibility: visible;
+      }
       .vftb1 {
         visibility: hidden;
         display: none;
@@ -81,20 +97,28 @@
       .vftb2 {
         visibility: visible;
       }
+      /*.vftb { */
+        /*background-image: url('https://source.unsplash.com/nNNxBHA4ops/500x900');*/
+        /*
+        background-repeat: repeat-y;
+      }
+
+
 
       .page {
         background-image: url('https://source.unsplash.com/Z3NceSeZqgI/500x2000');
         background-repeat: repeat-y;
       }
-
+     */
     }
 
     @media screen and (min-width: 501px) {
       .vftb {
-        background-image: url('https://source.unsplash.com/nNNxBHA4ops/900x500');
-        background-repeat: repeat-y;
+        background-color: #3e8ccf;
       }
-
+      .mobile{
+        visibility: visible;
+      }
       .vftb2 {
         visibility: hidden;
         display: none;
@@ -105,14 +129,24 @@
         display: block;
       }
 
+      /*
+      .vftb {
+        background-image: url('https://source.unsplash.com/nNNxBHA4ops/900x500');
+        background-repeat: repeat-y;
+      }
+
+
       .page {
         background-image: url('https://source.unsplash.com/Z3NceSeZqgI/900x2000');
         background-repeat: repeat-y;
       }
-
+      */
     }
 
     @media screen and (min-width: 801px) {
+      .mobile{
+        visibility: hidden;
+      }
       .vftb {
         background-image: url('https://source.unsplash.com/1sfGgGTiekY/900x500');
         background-size: cover;
@@ -178,11 +212,11 @@
     crossorigin="anonymous"></script>
   <script src="js.js"></script>
 
-  <!--
+  <div class="mobile">
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-    -->
+  </div>
   <header>
     <div class="jumbotron jumbotron-fluid vftb  vftb1"
       style="margin-bottom: 0px;padding: 30px;background-position: center top;">
@@ -390,9 +424,9 @@
         <br>
         <br>
         <h2
-          style="text-align:center;text-shadow: 10px 10px #0000;font-family: 'Acme', sans-serif;"
-          data-aos="fade-down">
+          style="text-align:center;text-shadow: 10px 10px #0000;font-family: 'Acme', sans-serif;">
           VOLUNTEERS FOR THE BLIND</h2>
+          <p style="text-align: center;font-size: 30px;">Commitment and Trust</p>
         <br>
         <img src="image/favicon.png" alt="vftb logo"
           style="margin-left: 50%;transform: translateX(-50%);height: 100px;width: 100px;margin-bottom: 13px;border: 1.5px solid black;border-radius: 50%;box-shadow: 5px 5px 5px #000000;">
