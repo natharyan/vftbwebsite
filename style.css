@@ -190,7 +190,7 @@ body{
   transition: all 0.3s ease-in-out;
 }
 .link-effect4:hover{
-  color:darkorange;
+  color:#3e8ccf;
 }
 /*slide from left to right and then slide out from right*/
 .link-effect3 {
