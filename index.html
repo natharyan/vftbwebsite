@@ -932,9 +932,20 @@
         <div class="storiesempty" style="height: 95.5%;"></div>
         <div class="container-fluid" style="width: 100%;padding-top: 10px;padding: 0px;">
           <a title="stories section homepage panel">
-            <div class="storiesbtn"
-              style="background-color:#373B44;width:200px;height: 36px;text-align: center;margin-left: 50%;transform: translateX(-50%);border-radius: 15px 15px 0px 0px;pointer-events: all;cursor: pointer;">
-              <i class="fas fa-chevron-up" id="slidearrow" style="color: white;font-size: 33px;"></i>
+            <div class="storiesbtn" style="background-color:#373B44;width:200px;height: 36px;text-align: center;margin-left: 50%;transform: translateX(-50%);border-radius: 15px 15px 0px 0px;pointer-events: all;cursor: pointer;">
+              <p style="font-family: 'Kaushan Script', cursive;font-size:20px;text-align: center;color: white;">VFTB STORIES</p>
+             
+              <!--<i class="fas fa-chevron-up" id="slidearrow" style="color: white;font-size: 33px;"></i>-->
+                    <script>
+                      $(document).ready(function () {
+                        $(".storiesbtn").click(function () {
+                          $(".storiesempty").slideToggle("fast ease");
+                          $(this).find('i').toggleClass('fas fa-chevron-down fas fa-chevron-up')
+                        });
+                      });
+                    </script>
+
+              
             </div>
           </a>
           <div class="container-fluid"
@@ -981,14 +992,7 @@
         </div>
       </div>
 
-      <script>
-        $(document).ready(function () {
-          $(".storiesbtn").click(function () {
-            $(".storiesempty").slideToggle("fast ease");
-            $(this).find('i').toggleClass('fas fa-chevron-down fas fa-chevron-up')
-          });
-        });
-      </script>
+
     </div>
   </main>
   <footer class="text-center text-lg-start bg-light" id="footer"
