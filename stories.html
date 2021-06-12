@@ -18,6 +18,55 @@
     href="https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&family=PT+Sans+Caption&family=Lobster&family=Proza+Libre&display=swap"
     rel="stylesheet">
   <style>
+    @media screen and (max-width: 300px) {
+      body {
+        /*this has background-position set to: top center*/
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/500x900');
+      }
+      pre{
+        font-size: 2px;
+      }
+    }
+
+    @media screen and (min-width: 301px) {
+      body {
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/500x900');
+
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      body {
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/500x900');
+        background-repeat: repeat-y;
+      }
+    }
+
+    @media screen and (min-width: 501px) {
+      body {
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/900x500');
+        background-repeat: repeat-y;
+      }
+    }
+
+    @media screen and (min-width: 801px) {
+      body {
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/900x500');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      body {
+        background-image: url('https://source.unsplash.com/S3uj--91cTA/1920x1080');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+
     .link-effect2 {
       color: white;
       transition: all 0.3s ease-in-out;
@@ -98,10 +147,7 @@
   </style>
 </head>
 
-<body style="background: url('https://source.unsplash.com/S3uj--91cTA/1920x1080');background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;">
+<body style="background-attachment: fixed;background-position: center top;">
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -112,17 +158,60 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-<header>
-  <div style="margin-top: 30px;margin-bottom: 100px;">
-    <img class="metadaelbg" width="430" height="270" src="image/paintbg.png" alt="whitebg"
-      style="position: absolute;margin-left: 50%;transform: translateX(-50%);top: 46px;">
-    <h1
-      style="font-family: 'Kaushan Script', cursive;font-size:100px;position: absolute;margin-left: 50%;transform: translateX(-50%);">
-      Stories</h1>
-  </div>
-</header>
+  <header>
+    <div style="margin-top: 30px;margin-bottom: 100px;">
+      <img class="metadaelbg" width="430" height="270" src="image/paintbg.png" alt="whitebg"
+        style="position: absolute;margin-left: 50%;transform: translateX(-50%);top: 46px;">
+      <h1
+        style="font-family: 'Kaushan Script', cursive;font-size:100px;position: absolute;margin-left: 50%;transform: translateX(-50%);">
+        Stories</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container-fluid" style="justify-content: center;width: 100%;display: flex;height: 100%;">
+      <div class="container" style="top: 300px;position: absolute;height: fit-content;">
+        <p>
+        <pre style="background-color: white;padding: 20px;border-radius: 5px;width: fit-content;">
+Looking around I see colours of red blue yellow and green
+how every particle speaks its essence,
+into a dream
+Dream of a land that blooms
+Where aesthetics are shaped by my blues
+
+Connections sparked by the spice, making it duller
+How relationships were marked based on there
+Colour.
+I wonder if in the beauty of rainbows suffices
+The reflection of our colours and disguises
+
+I see your reflection in my eyes
+How I am shining in ur irises
+Somewhat sinking in the depth of ur pupils
+
+I believe u see me
+In the depth of your eyes I drown my sorrows
+U say my eyes r the gateway
+Gateway to a land far away
+Where dreams r painted into moments and
+Moments into days
+I believe you see me
+
+But what you see in not the whispers of my secretes
+But the smudges of the colour reflected
+By the light throughout the beaches
+
+I wonder if the world was painted black
+Would me soul be more in sight
+        </pre>
+        </p>
+      </div>
+    </div>
+
+  </main>
   <a class="nav-link link-effect2" href="index.html"
-    style="border-radius: 15px;font-size: 40px;position: absolute;left: 15px;top: 15px;z-index: 50;" title="Back"><i
+    style="border-radius: 15px;font-size: 40px;position: fixed;left: 15px;top: 15px;z-index: 50;" title="Back"><i
       class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
 
   <div class="loading">
