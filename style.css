@@ -423,12 +423,15 @@ div.image:hover img{
   color: red;
 }
 
+
+/*background-image: linear-gradient(-60deg, #40E0D0 50%, #FF8C00 50%);*/
+/*background-image: linear-gradient(-60deg, #00C9FF 50%, #92FE9D 50%);*/
+/*background-image: linear-gradient(-60deg, #00c3ff 50%, #ffff1c 50%);*/
+/*background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);*/
+/*
 .bg {
   animation:slide 4.5s ease-in-out infinite alternate;
-  /*background-image: linear-gradient(-60deg, #40E0D0 50%, #FF8C00 50%);*/
-  /*background-image: linear-gradient(-60deg, #00C9FF 50%, #92FE9D 50%);*/
-  /*background-image: linear-gradient(-60deg, #00c3ff 50%, #ffff1c 50%);*/
-  /*background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);*/
+
   background-image: linear-gradient(-60deg, #f8f8f8 50%,  #538ACA 50%);
   bottom:0;
   left:-50%;
@@ -456,6 +459,40 @@ div.image:hover img{
     transform:translateX(25%);
   }
 }
+*/
+.bg {
+  background-image: linear-gradient(-60deg, #f8f8f8 33.33%, #6ca9ee 33.33%, #538ACA 33.33%);
+  bottom:0;
+  left:-20%;
+  opacity:.5;
+  position:fixed;
+  right:-20%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  background-image: linear-gradient(-60deg, #f8f8f8 50%,  #538ACA 50%);
+  bottom:0;
+  left:-20%;
+  opacity:.5;
+  position:fixed;
+  right:-20%;
+  top:0;
+  z-index:-1;
+}
+
+.bg3 {
+  background-image: linear-gradient(-60deg, #f8f8f8 50%,  #538ACA 50%);
+  bottom:0;
+  left:-20%;
+  opacity:.5;
+  position:fixed;
+  right:-20%;
+  top:0;
+  z-index:-1;
+}
+
 
 table.table-bordered{
   border:1.5px solid rgb(110, 110, 110);
