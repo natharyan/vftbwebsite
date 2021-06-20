@@ -360,6 +360,7 @@ div.image:hover img{
     transition: 0.3s;
     width: 100%;
     padding: 0px 10px;
+    height: 100%;
   }
   
   .card:hover {

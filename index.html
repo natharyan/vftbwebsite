@@ -248,7 +248,14 @@
       }
       */
     }
-
+    .events {
+    display: table;
+    width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
     #snackbar {
       visibility: hidden;
       min-width: 250px;
@@ -267,8 +274,8 @@
 
     #snackbar.show {
       visibility: visible;
-      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      -webkit-animation: fadein 1.5s, fadeout 0.5s 7.5s;
+      animation: fadein 1.5s, fadeout 0.5s 7.5s;
     }
 
     @-webkit-keyframes fadein {
@@ -855,7 +862,7 @@
 
 
 
-      <div id="events" class="container"
+      <div id="events" class="container events"
         style="height: 300%;text-align: center;background-color: whitesmoke;border-radius: 8px;">
         <br>
         <br>
@@ -865,7 +872,7 @@
 
           <div class="row" style="justify-content: center;">
 
-            <div class="col-lg-6" style="margin-bottom: 20px;">
+            <div class="col col-lg-6" style="margin-bottom: 20px;">
               <div data-aos="zoom" class="card">
                 <img alt="Orientation" src="image/image4.png" style="width: 100%;margin-top: 10px;" data-scroll-zoom />
                 <div class="container">
@@ -875,7 +882,7 @@
             </div>
 
 
-            <div class="col-lg-6" style="margin-bottom: 20px;">
+            <div class="col col-lg-6" style="margin-bottom: 20px;">
               <div data-aos="zoom" class="card">
                 <img alt="Volunteer Training" src="image/image9.png" style="width: 100%;margin-top: 10px;"
                   data-scroll-zoom />
@@ -887,7 +894,7 @@
           </div>
         </div>
         <div class="row" style="justify-content: center;">
-          <div class="col-lg-6" style="margin-bottom: 20px;">
+          <div class="col col-lg-6" style="margin-bottom: 20px;">
             <div data-aos="zoom" class="card">
               <img alt="health checkup" src="image/image7.png" style="width:100%;margin-top: 10px;" data-scroll-zoom />
               <div class="container">
@@ -896,7 +903,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6" style="margin-bottom: 20px;">
+          <div class="col col-lg-6" style="margin-bottom: 20px;">
             <div data-aos="zoom" class="card">
               <img alt="TechShare" src="image/image3.png" style="width: 100%;margin-top: 10px;" data-scroll-zoom />
               <div class="container">
@@ -1245,15 +1252,23 @@
   </script>
   <script>
     $(document).ready(function () {
-      $(".loading").fadeOut(2000);
+      $(".loading").delay(3000).fadeOut('slow');
     });
   </script>
-
+  <!--
   <script>
     $(window).on("load", function () {
       var x = document.getElementById("snackbar");
       x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000).delay(4000);
+    });
+  </script>
+  -->
+  <script>
+   $(window).on("load", function () {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 8000);
     });
   </script>
 
