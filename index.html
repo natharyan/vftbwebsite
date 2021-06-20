@@ -248,14 +248,7 @@
       }
       */
     }
-    .events {
-    display: table;
-    width: 100%;
-    }
-    .col {
-      display: table-cell;
-      padding: 16px;
-    }
+
     #snackbar {
       visibility: hidden;
       min-width: 250px;
@@ -550,10 +543,10 @@
         -->
   <main>
     <div id="snackbar">This page is disabled friendly according to UN norms.</div>
-    <div class="page" style="background-attachment: fixed;background-position: center top;">
+    <div class="page" style="background-attachment: fixed;background-position: center top;width: 100%;">
       <br>
       <br>
-      <div id="about" class="container"
+      <div id="about" class="container-fluid"
         style="background-color: whitesmoke;font-family: 'Acme', sans-serif;word-spacing: 2px;  align-items: center; justify-content: center;margin-bottom :0px;border-radius: 8px;">
         <br>
         <br>
@@ -590,7 +583,7 @@
         </div>
         <br>
         <br>
-        <div class="container block">
+        <div class="container-fluid block">
           <br>
           <br>
           <h3 style="text-align: center;font-family: 'Acme', sans-serif;">How We Help
@@ -747,7 +740,7 @@
       <br>
       <br>
       <br>
-      <div id="volunteer" class="container" style="background-color: whitesmoke;border-radius: 8px;">
+      <div id="volunteer" class="container-fluid" style="background-color: whitesmoke;border-radius: 8px;">
         <div class="container" style="font-family: 'Acme', sans-serif;">
           <br>
           <br>
@@ -862,7 +855,7 @@
 
 
 
-      <div id="events" class="container events"
+      <div id="events" class="container-fluid events"
         style="height: 300%;text-align: center;background-color: whitesmoke;border-radius: 8px;">
         <br>
         <br>
@@ -872,7 +865,7 @@
 
           <div class="row" style="justify-content: center;">
 
-            <div class="col col-lg-6" style="margin-bottom: 20px;">
+            <div class="col-sm-6" style="margin-bottom: 20px;">
               <div data-aos="zoom" class="card">
                 <img alt="Orientation" src="image/image4.png" style="width: 100%;margin-top: 10px;" data-scroll-zoom />
                 <div class="container">
@@ -882,7 +875,7 @@
             </div>
 
 
-            <div class="col col-lg-6" style="margin-bottom: 20px;">
+            <div class="col-sm-6" style="margin-bottom: 20px;">
               <div data-aos="zoom" class="card">
                 <img alt="Volunteer Training" src="image/image9.png" style="width: 100%;margin-top: 10px;"
                   data-scroll-zoom />
@@ -893,8 +886,9 @@
             </div>
           </div>
         </div>
+        <div class="container">
         <div class="row" style="justify-content: center;">
-          <div class="col col-lg-6" style="margin-bottom: 20px;">
+          <div class="col-sm-6" style="margin-bottom: 20px;">
             <div data-aos="zoom" class="card">
               <img alt="health checkup" src="image/image7.png" style="width:100%;margin-top: 10px;" data-scroll-zoom />
               <div class="container">
@@ -903,7 +897,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-lg-6" style="margin-bottom: 20px;">
+          <div class="col-sm-6" style="margin-bottom: 20px;">
             <div data-aos="zoom" class="card">
               <img alt="TechShare" src="image/image3.png" style="width: 100%;margin-top: 10px;" data-scroll-zoom />
               <div class="container">
@@ -915,6 +909,7 @@
           </div>
 
         </div>
+      </div>
         <br>
         <br>
         <h2 style="font-family: 'Acme', sans-serif;color: black;">UPCOMING EVENTS</h2>
