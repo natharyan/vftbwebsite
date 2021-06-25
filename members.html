@@ -65,6 +65,8 @@
   <h2 style="font-family: 'Kaushan Script', cursive;font-size:100px;text-align: center;color: black;">Members Section</h2>
   <hr style="border-top: 3px solid black;width: 200px;margin-left: 50%;transform: translateX(-50%);">
 </header>
+<a id="buttontop"></a>
+
 <main>
     <div class="container">
       
@@ -985,6 +987,22 @@
         $(".p2").slideToggle("slow");
       });
     });
+  </script>
+  <script>
+  var btn = $('#buttontop');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
   </script>
   <script>
     $(document).ready(function () {

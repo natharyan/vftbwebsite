@@ -43,6 +43,7 @@
         //-->
     </script>
     <br><br>
+  <a id="buttontop"></a>
     <header>
     <h1 style="font-family: 'Kaushan Script', cursive;font-size:100px;text-align: center;color: black;">Trustees Section</h1>
     <hr style="border-top: 3px solid black;width: 200px;margin-left: 50%;transform: translateX(-50%);">
@@ -558,7 +559,27 @@
         $(".loading").fadeOut("slow")
       });
     </script>
+    <script>
+    var btn = $('#buttontop');
 
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
+    </script>
+    <script>
+      $(window).on("load",function(){
+        $(".loading").fadeOut("slow")
+      });
+    </script>
   </body>
   <!--
   <script src="//code.tidio.co/e38th1jvnfc4jvy78prepdkcxjgwyeqf.js" async></script>-->

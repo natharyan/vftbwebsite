@@ -206,6 +206,7 @@
       <div class="bg bg2"></div>
       <div class="bg bg3"></div>
     </div>
+  <a id="buttontop"></a>
 
     <br><br>
     <div class="container-fluid" style="border-radius: 20px;background-color: white;">
@@ -339,6 +340,22 @@
 
       // Set the percentage off
       loading();
+    });
+  </script>
+   <script>
+    var btn = $('#buttontop');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
     });
   </script>
   <script>

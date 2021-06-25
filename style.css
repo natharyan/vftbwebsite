@@ -722,7 +722,42 @@ table.table-bordered > tbody > tr > td{
   padding-top:50px;
 }
 
-
+#buttontop {
+  display: inline-block;
+  background-color: #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#buttontop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#buttontop:hover {
+  cursor: pointer;
+  background-color: #FF9800;
+}
+#buttontop:active {
+  background-color: #555;
+}
+#buttontop.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 .button1{
 	text-decoration: none;

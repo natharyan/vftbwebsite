@@ -57,6 +57,7 @@
         }
         //-->
     </script>
+    <a id="buttontop"></a>
 
  
     <!---USE scroll-padding: 1rem 0 0 0; for when heading is covered on scrolling to section-->
@@ -392,6 +393,22 @@
           $(".p3").slideToggle("slow");
         });
       });
+    </script>
+    <script>
+    var btn = $('#buttontop');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
     </script>
       <script>
         $(document).ready(function () {
