@@ -1,13 +1,10 @@
 
 * {box-sizing: border-box}
 /*IMPORTANT. MAKES SCROLLING (jump to content) SMOOTH*/
-html {
-  scroll-behavior: smooth;
-}
+
 body{
   overflow-x: hidden;
 }
-
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -392,28 +389,42 @@ div.image:hover img{
   display: block;
   width: 180px;
   margin: auto;
-  transition: 1.5s ease;
+  transition: 1s ease;
   text-align: center;
   }
 .btn4:hover{
   transform: scale(1.1);
   }
-.btn1{
-  background-color:white;
-  border-radius:20px;
-  border: 1.8px solid black;
-  margin-bottom: 2px;
-  transition: transform 1.5s ease;
-  padding: 10px;
-  width: fit-content;
+  .btn1{
+    color: black;
+    background-color: #FFBF00;
+    border-radius:20px;
+    border: 0px;
+    margin-bottom: 2px;
+    transition: all 1s ease;
+    padding: 10px;
+    width: fit-content;
+  }
+  .btn4:hover .btn1{
+    color: white;
+    background-color:#036ea8;
+  }
+
+.red{
+  background-color: #3e8ccf;
+  color: white;
+  transition: all 0.5s ease;
+}
+.red:hover{
+  background-color:#189AB4;
+  color: black;
 }
 
-
-
-
 .btn3{
-  border:5px solid darkorange;
+  background-color: darkorange;
+  border: 0px;
   color: white;
+  transition: 0.5s ease;
 }
 
 .heart{
@@ -421,6 +432,10 @@ div.image:hover img{
 }
 .btn2:hover .heart{
   color: red;
+}
+.btn2:hover .btn3{
+  background-color: #ffbf00;
+  color: black;
 }
 
 
@@ -461,7 +476,7 @@ div.image:hover img{
 }
 */
 .bg {
-  background-image: linear-gradient(-60deg, #f8f8f8 33.33%, #6ca9ee 33.33%, #538ACA 33.33%);
+  background-image: linear-gradient(-60deg, #b9b8b8 33.33%, #6ca9ee 33.33%, #538ACA 33.33%);
   bottom:0;
   left:-20%;
   opacity:.5;
@@ -507,16 +522,16 @@ table.table-bordered > tbody > tr > td{
 
 .wrapper {
   position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-min-height: 100vh;
-background-color: #058175;
-font-family: Roboto;
-overflow: hidden;
-z-index: -1;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #058175;
+  font-family: Roboto;
+  overflow: hidden;
+  z-index: -1;
+  }
 
 .wave:nth-child(1) {
   position: absolute;
