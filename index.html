@@ -1717,9 +1717,11 @@
   -->
   <script>
     $(window).on("load", function () {
-      var x = document.getElementById("snackbar");
-      x.className = "show";
-      setTimeout(function () { x.className = x.className.replace("show", ""); }, 8000);
+      if($(document).width()>499){
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () { x.className = x.className.replace("show", ""); }, 8000);
+      }
     });
   </script>
   <script>
