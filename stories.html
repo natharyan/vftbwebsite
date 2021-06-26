@@ -146,6 +146,42 @@
         transform: rotate(-90deg);
       }
     }
+    #buttontop {
+    display: inline-block;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    }
+    #buttontop::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+    #buttontop:hover {
+      cursor: pointer;
+      background-color: #FF9800;
+    }
+    #buttontop:active {
+      background-color: #555;
+    }
+    #buttontop.show {
+      opacity: 1;
+      visibility: visible;
+    }
   </style>
 </head>
 
@@ -171,6 +207,7 @@
 
 
 
+  <a id="buttontop"></a>
 
     <div class="container-fluid" style="display: flex;justify-content: center;width: 100%;height: fit-content;align-items: center;padding: 30px;margin-bottom: 1700px;">
       <div class="container" style="background-color: white;padding: 20px;border-radius: 5px;top: 300px;position: absolute;height: fit-content;margin-bottom: 20px;">
@@ -266,6 +303,60 @@
       $(".loading").fadeOut("slow")
     });
   </script>
+    <script>
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+               };
+              });
+            }
+          }
+        });
+        </script>
+     <script>
+      var btn = $('#buttontop');
+  
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+  
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
+    </script>
 </body>
 
 </html>
