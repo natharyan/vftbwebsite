@@ -349,7 +349,63 @@ div.image:hover img{
   transition: .5s ease;
   font-family: 'Acme', sans-serif;
 }
-  
+  /*form*/
+  .card1 {
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.blue-text {
+    color: #00BCD4
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+  input:focus,
+  textarea:focus {
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      border: 1px solid #00BCD4;
+      outline-width: 0;
+      font-weight: 400
+  }
+
+  .btn-block {
+      text-transform: uppercase;
+      font-size: 15px !important;
+      font-weight: 400;
+      height: 43px;
+      cursor: pointer
+  }
+
+  .btn-block:hover {
+      color: #fff !important
+  }
+
+  button:focus {
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      outline-width: 0
+  }
   /*div.image:hover .overlay {    height: 90%;}*/
 
   .card {
@@ -396,9 +452,9 @@ div.image:hover img{
   transform: scale(1.1);
   }
   .btn1{
-    color: black;
-    background-color: #FFBF00;
-    border-radius:20px;
+    color: white;
+    background-color: #027ad6;
+    border-radius:5px;
     border: 0px;
     margin-bottom: 2px;
     transition: all 1s ease;
@@ -407,18 +463,17 @@ div.image:hover img{
   }
   .btn4:hover .btn1{
     color: white;
-    background-color:#036ea8;
+    background-color:#5e7d8d;
   }
 
 .red{
   cursor: pointer;
-  background-color: #3e8ccf;
+  background-color: #26a7ec;
   color: white;
   transition: all 0.5s ease;
 }
 .red:hover{
-  background-color:#FFBF00;
-  color: black;
+  background-color:#5e7d8d;
 }
 
 .btn3{
@@ -725,7 +780,7 @@ table.table-bordered > tbody > tr > td{
 
 #buttontop {
   display: inline-block;
-  background-color: #333;
+  background-color: #1889df;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -750,7 +805,7 @@ table.table-bordered > tbody > tr > td{
 }
 #buttontop:hover {
   cursor: pointer;
-  background-color: #FF9800;
+  background-color: #39525f;
 }
 #buttontop:active {
   background-color: #555;
