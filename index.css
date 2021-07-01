@@ -114,22 +114,22 @@
 }
 
 .slideshow--contrast .slide1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(200, 200, 75, 0.25)), to(rgba(200, 75, 75, 0.5))), url('image/slide3.JPG');
-  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url('image/slide3.JPG');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide3.JPG');
+  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide3.JPG');
   -webkit-animation: 20s slides-set-1 -0.2s infinite;
           animation: 20s slides-set-1 -0.2s infinite;
 }
 
 .slideshow--contrast .slide2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(200, 200, 75, 0.25)), to(rgba(200, 75, 75, 0.5))), url('image/slide2.JPG');
-  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url('image/slide2.JPG');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide2.JPG');
+  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide2.JPG');
   -webkit-animation: 20s slides-set-2 -0.2s infinite;
           animation: 20s slides-set-2 -0.2s infinite;
 }
 
 .slideshow--contrast .slide3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(200, 200, 75, 0.25)), to(rgba(200, 75, 75, 0.5))), url('image/slide1.jpg');
-  background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url('image/slide1.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide1.jpg');
+  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide1.jpg');
   -webkit-animation: 20s slides-set-3 -0.2s infinite;
           animation: 20s slides-set-3 -0.2s infinite;
 }
