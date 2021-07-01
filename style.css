@@ -187,7 +187,7 @@ body{
   transition: all 0.3s ease-in-out;
 }
 .link-effect4:hover{
-  color:#3e8ccf;
+  color:black;
 }
 /*slide from left to right and then slide out from right*/
 .link-effect3 {
@@ -351,11 +351,12 @@ div.image:hover img{
 }
   /*form*/
   .card1 {
+    background-color: white;
     padding: 30px 40px;
     margin-top: 60px;
     margin-bottom: 60px;
     border: none !important;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.4)
 }
 
 .blue-text {
@@ -379,7 +380,7 @@ button {
 }
 
   input:focus,
-  textarea:focus {
+  textarea:focus,.textinputform:focus {
       -moz-box-shadow: none !important;
       -webkit-box-shadow: none !important;
       box-shadow: none !important;

@@ -68,6 +68,13 @@
       .vftb2 {
         visibility: visible;
       }
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/500x900');
+        background-position: center center;       
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
 
       /*
 
@@ -126,6 +133,13 @@
       .vftb2 {
         visibility: visible;
         margin: auto;
+      }
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/500x900');
+        background-position: center center;       
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
 
       /*
@@ -236,6 +250,13 @@
 
       .vftb2 {
         visibility: visible;
+      }
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/500x900');
+        background-position: center center;       
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
 
       /*.vftb { */
@@ -348,7 +369,13 @@
         visibility: visible;
         display: block;
       }
-
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/900x500');
+        background-position: center center;       
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
       /*
       .vftb {
         background-image: url('https://source.unsplash.com/nNNxBHA4ops/900x500');
@@ -458,6 +485,13 @@
       .vftb1 {
         visibility: visible;
         display: block;
+      }
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/900x500');
+        background-position: center center; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
 
       /*
@@ -593,7 +627,13 @@
         visibility: visible;
         display: block;
       }
-
+      .formbg{
+        background-image: url('https://source.unsplash.com/hYAmjIvLALE/1920x1080');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
       /*
       .vftb {
         background-image: url('https://source.unsplash.com/1sfGgGTiekY/1920x1080');
@@ -1274,7 +1314,8 @@
               </p>
             </div>
           </div>
-          <div class="container-fluid px-1 py-5 mx-auto">
+          <br><br>
+          <div class="container-fluid px-1 py-5 mx-auto formbg">
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
                     <div class="card1">
@@ -1292,7 +1333,7 @@
                                 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" for="city">City<span class="text-danger"> *</span></label> <input type="text" id="city" name="city: " placeholder="" onblur="validate(5)"> </div>
                             </div>
                             <div class="row justify-content-between text-left">
-                                <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3" for="ans">What made you want to volunteer at VFTB?<span class="text-danger"> *</span></label> <input type="text" id="ans" name="maessage: " placeholder="" onblur="validate(6)"> </div>
+                                <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3" for="ans">What made you want to volunteer at VFTB?<span class="text-danger"> *</span></label><textarea class="textinputform" type="text" id="ans" name="maessage: " placeholder="" onblur="validate(6)" rows="5" style="resize: none;"><input></textarea></div>
                             </div>
                             <div class="row justify-content-end">
                                 <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
@@ -1304,6 +1345,11 @@
         </div>
           <br>
           <br>
+          <script>
+          $('form input').on('keypress', function(e) {
+            return e.which !== 13;
+        });
+        </script>
           <!--
           <div class="container"
             style="box-shadow: 0px 0px 2px #888;padding: 10px;background-color: #26a7ec;border: 1px solid black;color: white;">
@@ -1797,7 +1843,7 @@
     });
   </script>
   -->
-  <script src="forms.js"></script>i
+  <script src="forms.js"></script>
   <script>
     $(window).on("load", function () {
       if($(document).width()>499){
