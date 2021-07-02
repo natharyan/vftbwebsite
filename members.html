@@ -1,75 +1,143 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Members Section | VFTB</title>
-    <link rel="shortcut icon" type="image/jpeg" href="image/favicon.png">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="description" content="Members section">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&family=Proza+Libre&family=Cairo:wght@700&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
-    <script src="js.js"></script>
-    <script src="loader.js"></script>
+<head>
+  <title>Members Section | VFTB</title>
+  <link rel="shortcut icon" type="image/jpeg" href="image/favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Members section">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Lato&family=Kaushan+Script&family=Proza+Libre&family=Cairo:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+  <script src="js.js"></script>
+  <script src="loader.js"></script>
   <style>
     .wrapper2 {
-  background: #373B44;
-  
-  }
-  .panel,
-  .flip {
-    padding: 5px;
-    text-align: left;
-    background-color: white;
-    border-bottom: solid 1px #c3c3c3;
-    font-family: 'Proza Libre', sans-serif;
-  }
+      background: #373B44;
 
-  .panel {
-    padding: 50px;
-    display: none;
-  }
-  .flip{
-    padding: 15px;
-    font-weight: 600;
-  }
+    }
+
+    .panel,
+    .flip {
+      padding: 5px;
+      text-align: left;
+      background-color: white;
+      border-bottom: solid 1px #c3c3c3;
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .membersh {
+      font-size: 70px;
+    }
+    }
+
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+      .membersh {
+      font-size: 70px;
+    }
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+      .membersh {
+      font-size: 70px;
+    }
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+      .membersh {
+      font-size: 100px;
+    }
+    }
+
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+      .membersh {
+      font-size: 100px;
+    }
+    }
+
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+      .membersh {
+      font-size: 100px;
+    }
+    }
+
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width : 1224px) {
+      .membersh {
+      font-size: 100px;
+    }
+    }
+
+    /* Large screens ----------- */
+    @media only screen and (min-width : 1824px) {
+      .membersh {
+      font-size: 100px;
+    }
+    }
+
+    .panel {
+      padding: 50px;
+      display: none;
+    }
+
+    .flip {
+      padding: 15px;
+      font-weight: 600;
+    }
+
+
   </style>
-  </head>
-  <body style="font-family: 'Proza Libre', sans-serif;">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
 
-    <script>
-        //<!--hide
-        var password;
-        var pass1="members";
-        password=prompt('Enter Password to View Page');
-        if (password!=pass1)
-        {
-          alert('Incorrect Password, redirected to Homepage')
-          window.location="https://volunteers-fortheblind.org/";
-        }
+<body style="font-family: 'Lato', sans-serif;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    //<!--hide
+    var password;
+    var pass1 = "members";
+    password = prompt('Enter Password to View Page');
+    if (password != pass1) {
+      alert('Incorrect Password, redirected to Homepage')
+      window.location = "https://volunteers-fortheblind.org/";
+    }
         //-->
-    </script>
-  
+  </script>
+
   <br><br>
   <header>
-  <h2 style="font-family: 'Kaushan Script', cursive;font-size:100px;text-align: center;color: black;">Members Section</h2>
-  <hr style="border-top: 3px solid black;width: 200px;margin-left: 50%;transform: translateX(-50%);">
-</header>
-<a id="buttontop"></a>
+    <h2 class="membersh" style="font-family: 'Lato', sans-serif;text-align: center;color: black;">Members Section</h2>
+    <hr style="border-top: 3px solid black;width: 200px;margin-left: 50%;transform: translateX(-50%);">
+  </header>
+  <a id="buttontop"></a>
 
-<main>
+  <main>
     <div class="container">
-      
+
       <br>
       <div class="flip f1">Updates<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
       <div class="panel p1">
@@ -84,12 +152,13 @@
           <strong>Info!</strong> Ranchi started the relief initiative
         </div>
       </div>
-      
+
     </div>
     <br>
     <div class="container">
       <br>
-      <div class="flip f2">Directives by the City Councils<i class="fas fa-angle-down" style="float: right;margin-right: 5px;"></i></div>
+      <div class="flip f2">Directives by the City Councils<i class="fas fa-angle-down"
+          style="float: right;margin-right: 5px;"></i></div>
       <div class="panel p2">
         <div class="alert bg-primary text-white alert-dismissible">
           <strong>Info!</strong> Bombay started project relief
@@ -104,780 +173,850 @@
     </div>
     <div class="container">
       <br><br><br><br>
-    <strong>Update here what you have done in the past few days (for all members):</strong>
-    <a href="https://docs.google.com/spreadsheets/d/11KEks5t5IqjFWUyaLgsI_VqCFBI5a-hz6lbowst0MQ4/edit?usp=sharing" target="_blank">Updates</a>
-    <br><br><br><br>
-  </div>
+      <strong>Update here what you have done in the past few days (for all members):</strong>
+      <a href="https://docs.google.com/spreadsheets/d/11KEks5t5IqjFWUyaLgsI_VqCFBI5a-hz6lbowst0MQ4/edit?usp=sharing"
+        target="_blank">Updates</a>
+      <br><br><br><br>
+    </div>
     <div class="container-fluid mt-3">
-        <h2 style="font-family: 'Proza Libre', sans-serif;">Members Database</h2>
-        <label for="myInput" style="visibility: hidden;">Search Here</label>
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
-        <br>
-        <table class="table table-hover table-responsive">
-          <caption>Scroll right if content not visible</caption>
-          <thead>
-            <tr style="text-align: center;">
-              <th>Sr No</th>
-              <th>Name</th>
-              <th>Ranks Held</th>
-              <th>Member Sub(Paid/Not)</th>
-              <th>Status</th>
-              <th>Projects</th>
-              <th>Office Bearer Appointments Held</th>
-              <th>Special Skills/Profession/Background</th>
-              <th>Years Present</th>
-              <th>Other Associated Organisations & Designation</th>
-              <th>Contact Details</th>
-            </tr>
-          </thead>
-          <tbody id="myTable" style="font-size: 14px;">
-            <tr class="text-muted bg-white"><td colspan="11">
-              New Delhi</td></tr>
-            <tr>
-              <td>1</td>
-              <td>Vikas Kapoor(VH) </td>
-              <td></td>
-              <td></td>
-              <td>Dormant</td>
-              <td><ul>
+      <h2 style="font-family: 'Lato', sans-serif;">Members Database</h2>
+      <label for="myInput" style="visibility: hidden;">Search Here</label>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <table class="table table-hover table-responsive">
+        <caption>Scroll right if content not visible</caption>
+        <thead>
+          <tr style="text-align: center;">
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Ranks Held</th>
+            <th>Member Sub(Paid/Not)</th>
+            <th>Status</th>
+            <th>Projects</th>
+            <th>Office Bearer Appointments Held</th>
+            <th>Special Skills/Profession/Background</th>
+            <th>Years Present</th>
+            <th>Other Associated Organisations & Designation</th>
+            <th>Contact Details</th>
+          </tr>
+        </thead>
+        <tbody id="myTable" style="font-size: 14px;">
+          <tr class="text-muted bg-white">
+            <td colspan="11">
+              New Delhi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Vikas Kapoor(VH) </td>
+            <td></td>
+            <td></td>
+            <td>Dormant</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Pratap Bisht (VH), </td>
-              <td></td>
-              <td></td>
-              <td>Dormant</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Pratap Bisht (VH), </td>
+            <td></td>
+            <td></td>
+            <td>Dormant</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>CK Sharma </td>
-              <td></td>
-              <td></td>
-              <td>Dormant</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>CK Sharma </td>
+            <td></td>
+            <td></td>
+            <td>Dormant</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Sidhartha Sharma (VH) </td>
-              <td>Volunteer 2005; Member 2020</td>
-              <td></td>
-              <td>Passive</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Sidhartha Sharma (VH) </td>
+            <td>Volunteer 2005; Member 2020</td>
+            <td></td>
+            <td>Passive</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td>Business</td>
-              <td>2005-present</td>
-              <td>Foundations PR (Co)</td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9810627762 
-                  </li>
-                  <li>
-                    Email: <br>info@foundationspr.in
-                  </li>
-                  <li>
-                    Address: <br>Oakwood, Mehrauli, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Anjalee Arora (VH)</td>
-              <td></td>
-              <td></td>
-              <td>Dormant</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td>Business</td>
+            <td>2005-present</td>
+            <td>Foundations PR (Co)</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9810627762
+                </li>
+                <li>
+                  Email: <br>info@foundationspr.in
+                </li>
+                <li>
+                  Address: <br>Oakwood, Mehrauli, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Anjalee Arora (VH)</td>
+            <td></td>
+            <td></td>
+            <td>Dormant</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Individual support for the VH</li></ul>
+                  <ul>
+                    <li>Individual support for the VH</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td>Relationships (Volunteers)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Rajiv Gupta</td>
-              <td>Volunteer 2007;Member 2010</td>
-              <td></td>
-              <td>Passive</td>
-              <td></td>
-              <td></td>
-              <td>Business</td>
-              <td>2007-present</td>
-              <td>Humanity Foundation (NGO)</td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>7827663622
-                  </li>
-                  <li>
-                    Email: <br>humanityfoundationorg@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Garhi, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Pankaj Jain</td>
-              <td>Volunteer 2005;Member 2007</td>
-              <td></td>
-              <td>Active</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td>Relationships (Volunteers)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Rajiv Gupta</td>
+            <td>Volunteer 2007;Member 2010</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td></td>
+            <td>Business</td>
+            <td>2007-present</td>
+            <td>Humanity Foundation (NGO)</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>7827663622
+                </li>
+                <li>
+                  Email: <br>humanityfoundationorg@gmail.com
+                </li>
+                <li>
+                  Address: <br>Garhi, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Pankaj Jain</td>
+            <td>Volunteer 2005;Member 2007</td>
+            <td></td>
+            <td>Active</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td>Accountancy</td>
-              <td>2005-present</td>
-              <td>Skill development</td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9810408150 
-                  </li>
-                  <li>
-                    Email: <br>prjain52000@yahoo.co.in
-                  </li>
-                  <li>
-                    Address: <br>114, Kadambari apts, Sec 9, Rohini, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Dr Sudeep Dubey </td>
-              <td>Volunteer 2003;Member 2008</td>
-              <td></td>
-              <td>Active</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td>Accountancy</td>
+            <td>2005-present</td>
+            <td>Skill development</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9810408150
+                </li>
+                <li>
+                  Email: <br>prjain52000@yahoo.co.in
+                </li>
+                <li>
+                  Address: <br>114, Kadambari apts, Sec 9, Rohini, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Dr Sudeep Dubey </td>
+            <td>Volunteer 2003;Member 2008</td>
+            <td></td>
+            <td>Active</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td>Spec Edu</td>
-              <td>2003-present</td>
-              <td>BRA</td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number:
-                    <ul>
-                      <li>9891867446</li>
-                      <li>8178993244</li>
-                    </ul> 
-                  </li>
-                  <li>
-                    Email: <br>sudeepku2@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Dilshad Garden, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Milan Mittal (VH)</td>
-              <td>Volunteer 2007; Team Leader 2018, </td>
-              <td></td>
-              <td>Passive</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td>Spec Edu</td>
+            <td>2003-present</td>
+            <td>BRA</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number:
+                  <ul>
+                    <li>9891867446</li>
+                    <li>8178993244</li>
+                  </ul>
+                </li>
+                <li>
+                  Email: <br>sudeepku2@gmail.com
+                </li>
+                <li>
+                  Address: <br>Dilshad Garden, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Milan Mittal (VH)</td>
+            <td>Volunteer 2007; Team Leader 2018, </td>
+            <td></td>
+            <td>Passive</td>
+            <td>
+              <ul>
                 <li>Previously Handled Projects:
-                  <ul><li>Training of volunteers</li></ul>
+                  <ul>
+                    <li>Training of volunteers</li>
+                  </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td>Lawyer</td>
-              <td>2007-present</td>
-              <td>Law Firm</td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9910043004
-                  </li>
-                  <li>
-                    Email: <br>milan.mittal@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Patel Nagar, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Vineet Mani</td>
-              <td>Volunteer 2016, Team Leader 2017, Mentor 2018; Member 2021</td>
-              <td></td>
-              <td>Active</td>
-              <td></td>
-              <td></td>
-              <td>IT specialist</td>
-              <td>2016-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>7042803295
-                  </li>
-                  <li>
-                    Email: <br>vineetmani30@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Sahibabad, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>Pankaj Kushwaha (VH)</td>
-              <td>Volunteer 2015, Team Leader 2016</td>
-              <td></td>
-              <td>Active</td>
-              <td></td>
-              <td></td>
-              <td>Education</td>
-              <td>2015-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9868610216
-                  </li>
-                  <li>
-                    Email: <br>pankaj.jnu11@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>Sudhir Kumar</td>
-              <td>Volunteer 2014; Team Leader 2018; Member 2021</td>
-              <td></td>
-              <td>Active</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>2014-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9716576995
-                  </li>
-                  <li>
-                    Email: <br>itskumarsudhir@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>Vijay Kumar</td>
-              <td>Volunteer 2009, Team Leader 2016, Mentor 2018; Member 2021</td>
-              <td></td>
-              <td>Dynamic</td>
-              <td>
-                <ul>
-                  <li>
-                    Current Projects:
-                    <ul>
-                      <li>Volunteer relations</li>
-                    </ul>
-                  </li>
-                  <li>Previously Handled Projects:
-                    <ul>
-                      <li>Assignment of tasks to volunteers</li>
-                    </ul>
-                  </li>
-                </ul></td>
-              <td>Asst Secy Vol Relations (N Delhi) 2009; Asst Secy (VH Support) 2013</td>
-              <td>College Student</td>
-              <td>2009-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9873217770
-                  </li>
-                  <li>
-                    Email: <br>vijaykumarsep08@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>Naveen Chopra</td>
-              <td>Volunteer 2016; Member 2021</td>
-              <td></td>
-              <td>Passive</td>
-              <td></td>
-              <td>Asst Dir (North East)</td>
-              <td>Corporate professional</td>
-              <td>2016-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9999901717
-                  </li>
-                  <li>
-                    Email: <br>naveen1959@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Defence Colony New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>Deepali Roy</td>
-              <td>Volunteer 2002, F Member 2002</td>
-              <td></td>
-              <td>Active</td>
-              <td></td>
-              <td></td>
-              <td>PR Professional</td>
-              <td>2002-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9811360397
-                  </li>
-                  <li>
-                    Email: <br>deepali10roy@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>Mayur Vihar, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr class="text-muted bg-white"><td colspan="11">(Mentors-New Delhi)</td></tr>
-            <tr>
-              <td>1</td>
-              <td>Lavanya Saijwal</td>
-              <td>Volunteer 2019; Mentor 2021</td>
-              <td></td>
-              <td>Passive</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td>Lawyer</td>
+            <td>2007-present</td>
+            <td>Law Firm</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9910043004
+                </li>
+                <li>
+                  Email: <br>milan.mittal@gmail.com
+                </li>
+                <li>
+                  Address: <br>Patel Nagar, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Vineet Mani</td>
+            <td>Volunteer 2016, Team Leader 2017, Mentor 2018; Member 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td></td>
+            <td>IT specialist</td>
+            <td>2016-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>7042803295
+                </li>
+                <li>
+                  Email: <br>vineetmani30@gmail.com
+                </li>
+                <li>
+                  Address: <br>Sahibabad, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Pankaj Kushwaha (VH)</td>
+            <td>Volunteer 2015, Team Leader 2016</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td></td>
+            <td>Education</td>
+            <td>2015-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9868610216
+                </li>
+                <li>
+                  Email: <br>pankaj.jnu11@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Sudhir Kumar</td>
+            <td>Volunteer 2014; Team Leader 2018; Member 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2014-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9716576995
+                </li>
+                <li>
+                  Email: <br>itskumarsudhir@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Vijay Kumar</td>
+            <td>Volunteer 2009, Team Leader 2016, Mentor 2018; Member 2021</td>
+            <td></td>
+            <td>Dynamic</td>
+            <td>
+              <ul>
+                <li>
+                  Current Projects:
+                  <ul>
+                    <li>Volunteer relations</li>
+                  </ul>
+                </li>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>Assignment of tasks to volunteers</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+            <td>Asst Secy Vol Relations (N Delhi) 2009; Asst Secy (VH Support) 2013</td>
+            <td>College Student</td>
+            <td>2009-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9873217770
+                </li>
+                <li>
+                  Email: <br>vijaykumarsep08@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Naveen Chopra</td>
+            <td>Volunteer 2016; Member 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td>Asst Dir (North East)</td>
+            <td>Corporate professional</td>
+            <td>2016-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9999901717
+                </li>
+                <li>
+                  Email: <br>naveen1959@gmail.com
+                </li>
+                <li>
+                  Address: <br>Defence Colony New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Deepali Roy</td>
+            <td>Volunteer 2002, F Member 2002</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td></td>
+            <td>PR Professional</td>
+            <td>2002-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9811360397
+                </li>
+                <li>
+                  Email: <br>deepali10roy@gmail.com
+                </li>
+                <li>
+                  Address: <br>Mayur Vihar, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">(Mentors-New Delhi)</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Lavanya Saijwal</td>
+            <td>Volunteer 2019; Mentor 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td>
+              <ul>
                 <li>
                   Previously Handled Projects:
                   <ul>
                     <li>Office support</li>
                   </ul>
                 </li>
-              </ul></td>
-              <td>Assistant</td>
-              <td>Lawyer</td>
-              <td>2019-present</td>
-              <td>Law firm </td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>8588915717
-                  </li>
-                  <li>
-                    Email: <br>lavanyasaijwal145@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>25, adchini, opp B-59 sarvodaya enclave. ND- 110017
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Sohila Bakshi</td>
-              <td>Volunteer 2017; Team Leader 2018; Donor 2018; Mentor 2021</td>
-              <td></td>
-              <td>Active</td>
-              <td></td>
-              <td></td>
-              <td>Spec Edu (MH)</td>
-              <td>2017-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9350024325
-                  </li>
-                  <li>
-                    Email: <br>sohilabakshi@gmail.com
-                  </li>
-                  <li>
-                    Address: <br>C -, Defence Colony, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Neev Kalia</td>
-              <td>Volunteer 2018; Mentor 2021</td>
-              <td></td>
-              <td>Dynamic</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td>Assistant</td>
+            <td>Lawyer</td>
+            <td>2019-present</td>
+            <td>Law firm </td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>8588915717
+                </li>
+                <li>
+                  Email: <br>lavanyasaijwal145@gmail.com
+                </li>
+                <li>
+                  Address: <br>25, adchini, opp B-59 sarvodaya enclave. ND- 110017
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sohila Bakshi</td>
+            <td>Volunteer 2017; Team Leader 2018; Donor 2018; Mentor 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td></td>
+            <td></td>
+            <td>Spec Edu (MH)</td>
+            <td>2017-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9350024325
+                </li>
+                <li>
+                  Email: <br>sohilabakshi@gmail.com
+                </li>
+                <li>
+                  Address: <br>C -, Defence Colony, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Neev Kalia</td>
+            <td>Volunteer 2018; Mentor 2021</td>
+            <td></td>
+            <td>Dynamic</td>
+            <td>
+              <ul>
                 <li>
                   Current Projects:
                   <ul>
                     <li>Events</li>
                   </ul>
                 </li>
-              </ul></td>
-              <td></td>
-              <td>PR Professional</td>
-              <td>2018-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>8860484823
-                  </li>
-                  <li>
-                    Email: <br>neevvij@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Binni (VH)</td>
-              <td>Volunteer 2018; Mentor 2021</td>
-              <td></td>
-              <td>Passive</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>2018-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9015797396
-                  </li>
-                  <li>
-                    Email: <br>bkbinny@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Sumnima Rai</td>
-              <td>Volunteer 2017; Mentor 2021</td>
-              <td></td>
-              <td>Active</td>
-              <td><ul>
+              </ul>
+            </td>
+            <td></td>
+            <td>PR Professional</td>
+            <td>2018-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>8860484823
+                </li>
+                <li>
+                  Email: <br>neevvij@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Binni (VH)</td>
+            <td>Volunteer 2018; Mentor 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2018-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9015797396
+                </li>
+                <li>
+                  Email: <br>bkbinny@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sumnima Rai</td>
+            <td>Volunteer 2017; Mentor 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td>
+              <ul>
                 <li>Current Projects
                   <ul>
                     <li>Development in Kohima</li>
                   </ul>
                 </li>
-              </ul></td>
-              <td>Chair GC (Kohima)</td>
-              <td>Spec Edu</td>
-              <td>2017-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>8377972028
-                  </li>
-                  <li>
-                    Email: <br>sumnirai4@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Prabhat Agarwal</td>
-              <td>Donor 2018; Hony Member 2018</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>Business</td>
-              <td>2016-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>8076986088
-                  </li>
-                  <li>
-                    Email: <br>esskaylam@gmail.com
-                  </li>
-                  <li>
-                    Adress: <br>Preet Vihar, New Delhi
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr class="text-muted bg-white"><td colspan="11">Noida</td></tr>
-            <tr>
-              <td>1</td>
-              <td>RK & Neeta Jain(VH)</td>
-              <td>Volunteer 2000; F Member (N Delhi) 2002; F Member 2016</td>
-              <td></td>
-              <td>Passive</td>
-              <td></td>
-              <td></td>
-              <td>Printer</td>
-              <td>2000-present</td>
-              <td></td>
-              <td>
-                <ul>
-                  <li>
-                    Phone Number: <br>9250477033
-                  </li>
-                  <li>
-                    Email: <br>aarkaysenvelopes@gmail.com
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Rose Topno</td>
-              <td>Volunteer 2004; F Member 2006</td>
-              <td></td>
-              <td>Dormant</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Brig Kapil Varma</td>
-              <td>Volunteer 2005, F Member 2010</td>
-              <td></td>
-              <td>Passive</td>
-              <td>
-                <ul>
-                  <li>Previously Handled Projects:
-                    <ul>
-                      <li>Support for Disabled Veterans</li>
-                    </ul>
-                  </li>
-                </ul>
-              </td>
-              <td></td>
-              <td>Mil Veteran</td>
-              <td>2005-present</td>
-              <td></td>
-              <td><ul>
+              </ul>
+            </td>
+            <td>Chair GC (Kohima)</td>
+            <td>Spec Edu</td>
+            <td>2017-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>8377972028
+                </li>
+                <li>
+                  Email: <br>sumnirai4@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Prabhat Agarwal</td>
+            <td>Donor 2018; Hony Member 2018</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Business</td>
+            <td>2016-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>8076986088
+                </li>
+                <li>
+                  Email: <br>esskaylam@gmail.com
+                </li>
+                <li>
+                  Adress: <br>Preet Vihar, New Delhi
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">Noida</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>RK & Neeta Jain(VH)</td>
+            <td>Volunteer 2000; F Member (N Delhi) 2002; F Member 2016</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td></td>
+            <td>Printer</td>
+            <td>2000-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9250477033
+                </li>
+                <li>
+                  Email: <br>aarkaysenvelopes@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rose Topno</td>
+            <td>Volunteer 2004; F Member 2006</td>
+            <td></td>
+            <td>Dormant</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Brig Kapil Varma</td>
+            <td>Volunteer 2005, F Member 2010</td>
+            <td></td>
+            <td>Passive</td>
+            <td>
+              <ul>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>Support for Disabled Veterans</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+            <td></td>
+            <td>Mil Veteran</td>
+            <td>2005-present</td>
+            <td></td>
+            <td>
+              <ul>
                 <li>
                   Phone Number: <br>7042109936
                 </li>
                 <li>
                   Email: <br>kapilvarma255@gmail.com
                 </li>
-              </ul></td>
-            </tr>
-            <tr class="text-muted bg-white"><td colspan="11">Gurgaon</td></tr>
-              <tr>
-                <td>1</td>
-                <td>Naina Gandhi</td>
-                <td>Volunteer 2002;F Member 2007</td>
-                <td></td>
-                <td>Passive</td>
-                <td>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">Gurgaon</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Naina Gandhi</td>
+            <td>Volunteer 2002;F Member 2007</td>
+            <td></td>
+            <td>Passive</td>
+            <td>
+              <ul>
+                <li>Previously Handled Projects:
                   <ul>
-                    <li>Previously Handled Projects:
-                      <ul>
-                        <li>Fund Raiser 2002</li>
-                        <li>CSR at Guragaon 2012</li>
-                      </ul>
-                    </li>
+                    <li>Fund Raiser 2002</li>
+                    <li>CSR at Guragaon 2012</li>
                   </ul>
-                </td>
-                <td>COO 2015</td>
-                <td>Corporate links</td>
-                <td>2002-present</td>
-                <td>Amex - HR Dept</td>
-                <td><ul>
-                  <li>
-                    Phone Number: <br>9811188863
-                  </li>
-                  <li>
-                    Email: <br>nainaggandhi@gmail.com
-                  </li>
-                </ul></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Shefali Bhandari</td>
-                <td>Volunteer 2015; Mentor 2016; F  Member 2021</td>
-                <td></td>
-                <td>Passive</td>
-                <td></td>
-                <td></td>
-                <td>Corporate links</td>
-                <td>2015-present</td>
-                <td></td>
-                <td><ul>
-                  <li>
-                    Phone Number: <br>9650685401
-                  </li>
-                  <li>
-                    Email: <br>shefali.connect@gmail.com
-                  </li>
-                </ul></td>
-              </tr>
-              <tr class="text-muted bg-white"><td colspan="11">(Mentors-Gurgaon)</td></tr>
-              <tr>
-                <td>1</td>
-                <td>Dinesh & Mrs Kaushal (VH)</td>
-                <td>Volunteer 2016; Mentor 2018; F Member 2021</td>
-                <td></td>
-                <td>Passive</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2016-present</td>
-                <td></td>
-                <td><ul>
-                  <li>
-                    Phone Number: <br>9718328272
-                  </li>
-                  <li>
-                    Email: <br>dineshkaushal@hotmail.com;
-                  </li>
-                </ul></td>
-              </tr>
-              <tr class="text-muted bg-white"><td colspan="11">Ghaziabad</td></tr>
-              <tr>
-                <td>1</td>
-                <td>Rajan Jauhar</td>
-                <td>Volunteer 2000; Team Leader 2016; Member 2007; F Member Gzbad 2021</td>
-                <td></td>
-                <td>Active</td>
-                <td><ul>
-                  <li>
-                    Projects Previously Handled:
-                    <ul>
-                      <li>Accounts 2007-11</li>
-                    </ul>
-                  </li>
-                </ul></td>
-                <td></td>
-                <td></td>
-                <td>2000-present</td>
-                <td>SEL</td>
-                <td><ul>
-                  <li>
-                    Phone Number: <br>9810240522
-                  </li>
-                  <li>
-                    Email: <br>rjauhar.adv@gmail.com
-                  </li>
-                </ul></td>
-              </tr>
-              <tr class="text-muted bg-white"><td colspan="11">(Mentors-Ghaziabad)</td></tr>
-              <tr>
-                <td>1</td>
-                <td>Neha Kaudam</td>
-                <td>Volunteer 2017; Team Leader 2018; Mentor 2021</td>
-                <td></td>
-                <td>Active</td>
-                <td><ul>
-                  <li>
-                    Current Projects:
-                    <ul>
-                      <li>Vol Relations (Ghaziabad)</li>
-                    </ul>
-                  </li>
-                  <li>Previously Handled Projects:
-                    <ul>
-                      <li>Volunteer supervision on 2 occasions</li>
-                    </ul>
-                  </li>
-                </ul></td>
-                <td></td>
-                <td>Spec Edu</td>
-                <td>2017-present</td>
-                <td></td>
-                <td><ul>
-                  <li>
-                    Phone Number: <br>9818136870
-                  </li>
-                  <li>
-                    Email: <br>nehakardam126@gmail.com
-                  </li>
-                </ul></td>
-              </tr>
-          </tbody>
-        </table>
-        <script>
-            $(document).ready(function(){
-              $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-              });
+                </li>
+              </ul>
+            </td>
+            <td>COO 2015</td>
+            <td>Corporate links</td>
+            <td>2002-present</td>
+            <td>Amex - HR Dept</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9811188863
+                </li>
+                <li>
+                  Email: <br>nainaggandhi@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Shefali Bhandari</td>
+            <td>Volunteer 2015; Mentor 2016; F Member 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td></td>
+            <td>Corporate links</td>
+            <td>2015-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9650685401
+                </li>
+                <li>
+                  Email: <br>shefali.connect@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">(Mentors-Gurgaon)</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Dinesh & Mrs Kaushal (VH)</td>
+            <td>Volunteer 2016; Mentor 2018; F Member 2021</td>
+            <td></td>
+            <td>Passive</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2016-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9718328272
+                </li>
+                <li>
+                  Email: <br>dineshkaushal@hotmail.com;
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">Ghaziabad</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Rajan Jauhar</td>
+            <td>Volunteer 2000; Team Leader 2016; Member 2007; F Member Gzbad 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td>
+              <ul>
+                <li>
+                  Projects Previously Handled:
+                  <ul>
+                    <li>Accounts 2007-11</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+            <td></td>
+            <td></td>
+            <td>2000-present</td>
+            <td>SEL</td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9810240522
+                </li>
+                <li>
+                  Email: <br>rjauhar.adv@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="text-muted bg-white">
+            <td colspan="11">(Mentors-Ghaziabad)</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Neha Kaudam</td>
+            <td>Volunteer 2017; Team Leader 2018; Mentor 2021</td>
+            <td></td>
+            <td>Active</td>
+            <td>
+              <ul>
+                <li>
+                  Current Projects:
+                  <ul>
+                    <li>Vol Relations (Ghaziabad)</li>
+                  </ul>
+                </li>
+                <li>Previously Handled Projects:
+                  <ul>
+                    <li>Volunteer supervision on 2 occasions</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+            <td></td>
+            <td>Spec Edu</td>
+            <td>2017-present</td>
+            <td></td>
+            <td>
+              <ul>
+                <li>
+                  Phone Number: <br>9818136870
+                </li>
+                <li>
+                  Email: <br>nehakardam126@gmail.com
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        $(document).ready(function () {
+          $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
-        </script>        
+          });
+        });
+      </script>
     </div>
     <br>
     <br>
 
     <div class="jumbotron jumbotron-fluid" style="text-align: center;background-color: #42495B;">
-                  
+
       <div class="container">
-        <h2 style="color:white;font-family: 'Kaushan Script', cursive;">UPCOMING EVENTS</h2>
+        <h2 style="color:white;font-family: 'Lato', sans-serif;">UPCOMING EVENTS</h2>
       </div>
     </div>
     <br>
@@ -887,46 +1026,48 @@
           <div data-aos="zoom" class="image">
             <img alt="coming soon" src="" data-scroll-zoom />
             <div class="">
-                <div class="text1"></div>
+              <div class="text1"></div>
             </div>
           </div>
         </div>
-      
+
         <div class="column">
           <div data-aos="zoom" class="image">
             <img alt="coming soon" src="" data-scroll-zoom />
             <div class="">
-                <div class="text1"></div>
+              <div class="text1"></div>
             </div>
           </div>
         </div>
-      
-      
+
+
         <div class="column">
           <div data-aos="zoom" class="image">
             <img alt="coming soon" src="" data-scroll-zoom />
             <div class="">
-                <div class="text1"></div>
+              <div class="text1"></div>
             </div>
           </div>
         </div>
-      
-      
+
+
         <div class="column">
           <div data-aos="zoom" class="image">
             <img alt="coming soon" src="" data-scroll-zoom />
             <div class="">
-                <div class="text1"></div>
+              <div class="text1"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-   <br>
-   <br>
-  
-   <a class="nav-link link-effect2" href="select.html" style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 23px;z-index: 50;" title="back"><i class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
-   <!--
+    <br>
+    <br>
+
+    <a class="nav-link link-effect2" href="select.html"
+      style="border-radius: 15px;font-size: 35px;position: absolute;left: 15px;top: 23px;z-index: 50;" title="back"><i
+        class="fas fa-angle-double-left" style="margin-right: 5px;"></i></a>
+    <!--
    <input type="text" id="t1message" placeholder="Your name(optional)" title="Type a message">
    <input type="text" id="tmessage" placeholder="Say Hi.." title="Type a message">
    <button onclick="message()">Send</button>
@@ -947,31 +1088,31 @@
   }
    </script>
 -->
-<!--
+    <!--
   <div class="loading"></div>
 -->
-<div class="loading">
-  <div class="loader">
-    <div class="image1">
-      <i class="fas fa-blind"></i>
+    <div class="loading">
+      <div class="loader">
+        <div class="image1">
+          <i class="fas fa-blind"></i>
+        </div>
+        <span></span>
+      </div>
     </div>
-    <span></span>
-  </div>
-</div>
-<a href="http://vftbchat.chatango.com/">Mobile users can use this link to access the chatspace.</a>
-  <h1 style="visibility: hidden;">Chatspace located here:</h1>
-</main>
+    <a href="http://vftbchat.chatango.com/">Mobile users can use this link to access the chatspace.</a>
+    <h1 style="visibility: hidden;">Chatspace located here:</h1>
+  </main>
   <script type="text/javascript">
     var chatango = document.createElement('script');
-    chatango.setAttribute('type','text/javascript');
-    chatango.setAttribute('id','cid0020000283212371262');
-    chatango.setAttribute('data-cfasync','false');
-    chatango.setAttribute('async',true);
-    chatango.setAttribute('src','//st.chatango.com/js/gz/emb.js');
-    chatango.setAttribute('style','width: 100%;height: 471px;');
+    chatango.setAttribute('type', 'text/javascript');
+    chatango.setAttribute('id', 'cid0020000283212371262');
+    chatango.setAttribute('data-cfasync', 'false');
+    chatango.setAttribute('async', true);
+    chatango.setAttribute('src', '//st.chatango.com/js/gz/emb.js');
+    chatango.setAttribute('style', 'width: 100%;height: 471px;');
     chatango.innerHTML = '{"handle":"vftbchat","arch":"js","styles":{"a":"383838","b":100,"c":"FFFFFF","d":"FFFFFF","k":"383838","l":"383838","m":"383838","n":"FFFFFF","p":"10","q":"383838","r":100,"usricon":0.99,"cnrs":"0.35","fwtickm":1}}';
     document.body.appendChild(chatango);
-</script>
+  </script>
   <script>
     $(document).ready(function () {
       $(".p1").slideToggle("slow");
@@ -986,19 +1127,19 @@
       });
     });
   </script>
-    <script>
-      // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
-            location.hostname == this.hostname
-          ) {
+  <script>
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
           // Figure out element to scroll to
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -1008,7 +1149,7 @@
             event.preventDefault();
             $('html, body').animate({
               scrollTop: target.offset().top
-            }, 1000, function() {
+            }, 1000, function () {
               // Callback after animation
               // Must change focus!
               var $target = $(target);
@@ -1016,29 +1157,29 @@
               if ($target.is(":focus")) { // Checking if the target was focused
                 return false;
               } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
-               };
-              });
-            }
+              };
+            });
           }
-        });
-        </script>
+        }
+      });
+  </script>
   <script>
-  var btn = $('#buttontop');
+    var btn = $('#buttontop');
 
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
   </script>
   <script>
     $(document).ready(function () {
@@ -1059,10 +1200,11 @@
     });
   </script>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
       $(".loading").delay(1000).fadeOut("slow")
     });
   </script>
-  
-  </body>
+
+</body>
+
 </html>

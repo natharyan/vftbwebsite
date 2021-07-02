@@ -152,26 +152,30 @@ body{
 }
 
 /*center to sides*/
-.link-effect1{
-  position: relative; 
-  }
-.link-effect1:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
+.link-effect1 {
+  display: block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  overflow: hidden;
 }
-
-
+.link-effect1:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+.link-effect1:before {
+  transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
 .link-effect1:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+  width: 100%;
+  left: 0;
+  background: black;
 }
 
 /*orange on hover*/
@@ -203,7 +207,7 @@ body{
   bottom: 0;
   right: 0;
   width: 0;
-  height: 2px;
+  height: 3px;
   background-color: black;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -478,7 +482,7 @@ button {
 }
 
 .btn3{
-  background-color: darkorange;
+  background-color: #027ad6;
   border: 0px;
   color: white;
   transition: 0.5s ease;
@@ -491,7 +495,7 @@ button {
   color: red;
 }
 .btn2:hover .btn3{
-  background-color: #ffbf00;
+  background-color: hsl(33, 100%, 53%);
   color: black;
 }
 
