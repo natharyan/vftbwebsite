@@ -3,7 +3,6 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  margin-top: 0px;
 }
 
 .slideshow {
@@ -41,9 +40,8 @@
 }
 
 .slideshow--hero .slide1 {
-  background-image: url('image/slide3.JPG');
+  background-image: url('image/slide3.jpg');
   background-size: 1000px 750px;
-  /*background-image: url(https://source.unsplash.com/1000x750);*/
   -webkit-animation: 20s slides-set-1 -0.1s infinite;
           animation: 20s slides-set-1 -0.1s infinite;
 }
@@ -56,7 +54,7 @@
 }
 
 .slideshow--hero .slide3 {
-  background-image: url('image/slide1.jpg');
+  background-image: url('image/slide1.JPG');
   background-size: 1002px 752px;
   -webkit-animation: 20s slides-set-3 -0.1s infinite;
           animation: 20s slides-set-3 -0.1s infinite;
@@ -114,8 +112,8 @@
 }
 
 .slideshow--contrast .slide1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide3.JPG');
-  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide3.JPG');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide3.jpg');
+  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide3.jpg');
   -webkit-animation: 20s slides-set-1 -0.2s infinite;
           animation: 20s slides-set-1 -0.2s infinite;
 }
@@ -128,8 +126,8 @@
 }
 
 .slideshow--contrast .slide3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide1.jpg');
-  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide1.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26a7ec70), to(rgba(0, 0, 0, 0.212))), url('image/slide1.JPG');
+  background-image: linear-gradient(to bottom, #26a7ec70 0, rgba(0, 0, 0, 0.212) 100%), url('image/slide1.JPG');
   -webkit-animation: 20s slides-set-3 -0.2s infinite;
           animation: 20s slides-set-3 -0.2s infinite;
 }
@@ -456,4 +454,3 @@
             transform: scale(1.05);
   }
 }
-/*# sourceMappingURL=index.css.map */
